@@ -1,0 +1,25 @@
+.navbar{
+    padding: 20px 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar img{
+    width: 170px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    padding: 10px;
+}
+
+.show,
+.collapsing{
+    text-align: center;
+}
+
