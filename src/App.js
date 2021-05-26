@@ -1,6 +1,6 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment } from 'react';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 /** Components **/
 import Portfolio from './components/layout/portfolio/Portfolio';
@@ -20,7 +20,7 @@ import webLogo from './assets/web_logo.png';
 
 function App() {
   return (
-    <Fragment>
+    <Fragment >
       <Navbar expand="lg" collapseOnSelect>
         <Navbar.Brand>
           <Link to="/"><img src={webLogo} alt=""></img></Link>
@@ -28,6 +28,9 @@ function App() {
 
         <Navbar.Toggle />
         <Navbar.Collapse>
+          <Nav>
+            <Link to="/">Home</Link>
+          </Nav> 
           <Nav>
             <Link to="/about">About</Link>
           </Nav> 

@@ -1,7 +1,18 @@
-body{
-  max-width: 1200px;
-  margin: 0 auto !important;
-  padding: 0 10px;
+:root{
+  --font-size-p-mobile: 15px;
 }
+
+body {
+  font-family: 'Work Sans', serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prata', serif;
+ }
+
+ p{
+  font-family: 'Work Sans', serif;
+ }
 
 

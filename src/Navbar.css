@@ -1,8 +1,13 @@
 .navbar{
     padding: 30px 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Prata';
     font-weight: 600;
     font-size: larger;
+    background: rgb(255, 247, 231);
+}
+
+.navbar-brand{
+    padding-left: 5vw;
 }
 
 .navbar a{
