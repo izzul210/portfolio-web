@@ -21,10 +21,9 @@ import webLogo from './assets/web_logo.png';
 function App() {
   return (
     <Fragment>
-
       <Navbar expand="lg" collapseOnSelect>
         <Navbar.Brand>
-          <Link to="/"><img src={webLogo}></img></Link>
+          <Link to="/"><img src={webLogo} alt=""></img></Link>
         </Navbar.Brand>
 
         <Navbar.Toggle />
