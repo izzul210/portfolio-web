@@ -17,6 +17,11 @@
                 font-size: 5rem;
                 font-weight: 700;
             }
+
+            h2{
+                color: rgb(216, 14, 14);
+                font-size: 2.5rem;
+            }
         }
 
         
@@ -24,6 +29,7 @@
         .header_about{
             max-width: 40vw;
             font-size: large;
+            opacity: 0.75;
         }
 
         .header_title h1,
