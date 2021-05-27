@@ -3,14 +3,16 @@ import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 
 /** Components **/
-import Portfolio from './components/layout/portfolio/Portfolio';
+import Home from './components/layout/home/Home';
 import About from './components/layout/about/About';
 import Projects from './components/layout/projects/Projects';
 import Blog from './components/layout/blog/Blog';
 import Artworks from './components/layout/artworks/Artworks';
 
+import Topbar from './components/layout/topbar/Topbar';
+
 /** CSS **/
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css';
 
@@ -20,6 +22,20 @@ import webLogo from './assets/web_logo.png';
 
 function App() {
   return (
+    <div className="app">
+      <Topbar/>
+      <div className="sections">
+        <Home />
+      </div>
+    </div>
+
+  );
+}
+
+export default withRouter(App);
+
+
+/*
     <Fragment >
       <Navbar expand="lg" collapseOnSelect>
         <Navbar.Brand>
@@ -55,7 +71,6 @@ function App() {
       </Switch>
 
     </Fragment>
-  );
-}
 
-export default withRouter(App);
+
+*/

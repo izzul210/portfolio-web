@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
+import { init } from 'ityped';
 
-import './Portfolio.css';
+import headerImage from '../../../assets/default_header.png';
 
-import headerImage from '../../../assets/header_img.png';
 
-class Portfolio extends Component{
+class Header extends Component{
     render(){
         return(
             <Fragment>
@@ -16,14 +16,19 @@ class Portfolio extends Component{
                         </div>
                         <div className="header_about">
                             <p>I'm a 24 years old recent Electrical Engineering graduate from UBC, Vancouver.
-                                This website showcase all of my projects and portfolios on <b>Web Development</b>, <b>Machine Learning</b>, and 
-                                 <b> Engineering</b>. 
+                                This website showcase all of my projects and portfolios on <b>Web Development</b>, 
+                                <b>Engineering</b>, and <b> Machine Learning</b>. 
                             </p>
                         </div>
                         <div className="header_button">
                             <button>Download CV</button>
                         </div>
                         
+                    </div>
+                    <div className="header_img">
+                        <div className="img_container">
+                            <img src={headerImage} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -35,4 +40,4 @@ class Portfolio extends Component{
     }
 }
 
-export default Portfolio;
+export default Header;
