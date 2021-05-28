@@ -1,0 +1,209 @@
+@import '../../../global.scss';
+
+.portfolio_div{
+    margin: 5rem 2rem;
+
+    .portfolio_title{
+        margin: 2rem 0rem;
+        display: flex;
+        justify-content: center;
+        
+        h3{
+            font-weight: 700;
+            opacity: 0.75;
+        }
+    }
+
+    .portfolio_webdev{
+        .webdev_title{
+            color: $red_text;
+            text-align: center;
+  
+        }
+        
+        .webdev_portfolios{
+            display: flex;
+            flex-direction: column;
+            padding: 0 5vw;
+
+            .webdev_1{
+                margin: 2rem;
+                display: flex;
+                justify-content: flex-start;
+
+                .webdev_project1{
+                    width: 80rem;
+                    background: linear-gradient( rgb(250, 247, 247),rgb(237, 241, 243));
+                    border-radius: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 1rem;
+
+                        .project1_des{
+                            padding: 5rem 2rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            h3{
+                                font-weight: 700;
+                                margin: 1rem 0rem;
+                            }
+
+                            p{
+                                margin: 1rem 0rem;
+                            }
+
+                            .project_tags{
+                                display: flex;
+                                flex-direction: row;
+                                margin: 1rem 0rem;
+
+                                p{
+                                    margin: 5px;
+                                    padding: 5px 10px;
+                                    background:rgb(94, 206, 94);
+                                    border: 0.5px solid rgba(0, 0, 0, 0.426);
+                                    border-radius: 50px;
+                                    color: white;
+                                    font-size: 0.9rem;
+                                    
+                                }
+                            }
+
+                            .project_buttons{
+                                margin: 1rem 0rem;
+                                
+                                button{
+                                    margin-right: 1rem;
+                                    color: rgb(255, 255, 255);
+                                    padding: 15px 50px;
+                                    font-size: 1rem;
+                                    text-decoration: none;
+                                    outline: none;
+                                    border: none;
+                                    
+                                    font-weight: 500;
+                                    transition: all .1s ease-in-out;
+                    
+                                    &:hover{
+                                        transform: translateY(-5%);
+                                        box-shadow: 0 5px 10px rgba(41, 41, 41, 0.26);
+                                    }
+                    
+                                    &:active{
+                                        transform: translateY(0%);
+                                        box-shadow: inset -2px -2px 3px rgb(248, 247, 247),
+                                                    inset 2px 2px 7px rgba(0, 0, 0, 0.233);
+                                    }
+                                }
+
+                                .web_button{
+                                    background: linear-gradient(50deg, rgb(78, 167, 152), rgb(68, 192, 155));
+                                    border-radius: 50px;
+                                }
+
+                                .more_button{
+                                    border: 1px solid rgba(0, 0, 0, 0.433);
+                                    color: rgb(0, 0, 0);
+                                }
+                            }
+                        }
+
+                        .project1_img{
+                            padding: 4rem 1rem;
+                            img{
+                                width: 40rem;
+                            }
+                            
+                        }
+                }
+            }
+            .webdev_2{
+                margin: 2rem;
+                display: flex;
+                justify-content: flex-end;
+
+                .webdev_project2{
+                    height: 25rem;
+                    width: 75rem;
+                    background: linear-gradient( rgb(250, 250, 227),rgb(250, 250, 244));
+                    border-radius: 30px;
+                }
+            }
+            .webdev_3{
+                margin: 2rem;
+                display: flex;
+                justify-content: flex-start;
+
+                .webdev_project3{
+                    height: 25rem;
+                    width: 75rem;
+                    background: linear-gradient( rgb(250, 247, 247),rgb(237, 241, 243));
+                    border-radius: 30px;
+                }
+            }
+
+        }
+    }
+}
+
+/* Phone Size */
+@media screen and (max-width: 640px){
+    .portfolio_div{    
+        margin: 5rem 1rem;
+
+        .portfolio_title{            
+            h3{
+                font-weight: 700;
+                opacity: 0.75;
+            }
+        }
+    
+        .portfolio_webdev{
+            .webdev_title{
+                color: $red_text;
+                text-align: center;
+            }
+            
+            .webdev_portfolios{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+    
+                .webdev_1{
+                    margin: 1rem 0rem;
+                    justify-content: center;
+    
+                    .webdev_project1{
+                        height: 25rem;
+                        width: 100%;
+                        
+
+                    }
+                }
+                .webdev_2{
+                    margin: 1rem 0rem;
+                    justify-content: center;
+    
+                    .webdev_project2{
+                        height: 25rem;
+                        width: 100%;
+                    }
+                }
+                .webdev_3{
+                    margin: 1rem 0rem;
+                    justify-content: center;
+    
+                    .webdev_project3{
+                        height: 25rem;
+                        width: 100%;
+                    }
+                }
+    
+            }
+        }
+    }
+
+}
+

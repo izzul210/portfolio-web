@@ -1,8 +1,8 @@
 @import '../../../global.scss';
 
 .header_div{
-    background: rgb(255, 247, 231);
-    padding-top: 5rem;
+    background: linear-gradient( 180deg, rgb(247, 247, 232),rgb(248, 248, 236));
+    padding-top: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
             }
 
             h2{
-                color: rgb(216, 14, 14);
+                color: $red_text;
                 font-size: $dekstop_h2_font;
             }
         }
@@ -44,6 +44,7 @@
                 background: linear-gradient(50deg, rgb(78, 167, 152), rgb(68, 192, 155));
                 border-radius: 50px;
                 font-weight: 500;
+                transition: all .1s ease-in-out;
 
                 &:hover{
                     transform: translateY(-5%);
@@ -94,7 +95,7 @@
 /* Phone Size */
 @media screen and (max-width: 640px){
     .header_div{
-        padding-top: 6rem;
+        padding-top: 7rem;
     
         .header_text{
             padding: 0rem 1.5rem;

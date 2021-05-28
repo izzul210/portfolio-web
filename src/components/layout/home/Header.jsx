@@ -36,10 +36,6 @@ class Header extends Component{
                         </div>
                     </div>
                 </div>
-
-                <div className="portfolio_content">
-                    <h1>Portfolio Content</h1>
-                </div>
             </Fragment>
         )
     }

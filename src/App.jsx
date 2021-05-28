@@ -17,8 +17,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css';
 
 /** PNG files  **/
-import webLogo from './assets/web_logo.png';
-
 
 function App() {
   return (
