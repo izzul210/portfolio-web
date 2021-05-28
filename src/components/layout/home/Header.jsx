@@ -38,7 +38,7 @@ class Header extends Component{
                 </div>
 
                 <div className="portfolio_content">
-                    <img src={headerImage} alt=""></img>
+                    <h1>Portfolio Content</h1>
                 </div>
             </Fragment>
         )

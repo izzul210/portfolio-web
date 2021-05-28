@@ -1,12 +1,14 @@
+@import '../../../global.scss';
+
 .header_div{
     background: rgb(255, 247, 231);
-    padding: 5rem 7vw 0vw 7vw;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
     .header_text{
-        flex: 0.5;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,22 +16,46 @@
 
         .header_title{
             h1{
-                font-size: 5rem;
+                font-size: $desktop_h1_font;
                 font-weight: 700;
             }
 
             h2{
                 color: rgb(216, 14, 14);
-                font-size: 2.5rem;
+                font-size: $dekstop_h2_font;
             }
         }
 
-        
     
         .header_about{
-            max-width: 40vw;
-            font-size: large;
-            opacity: 0.75;
+            max-width: 45rem;
+            font-size: $dekstop_p_font;
+            opacity: 0.85;
+        }
+
+        .header_button{
+            button{
+                color: rgb(255, 255, 255);
+                padding: 15px 50px;
+                font-size: 1rem;
+                text-decoration: none;
+                outline: none;
+                border: none;
+                background: linear-gradient(50deg, rgb(78, 167, 152), rgb(68, 192, 155));
+                border-radius: 50px;
+                font-weight: 500;
+
+                &:hover{
+                    transform: translateY(-5%);
+                    box-shadow: 0 5px 10px rgba(41, 41, 41, 0.26);
+                }
+
+                &:active{
+                    transform: translateY(0%);
+                    box-shadow: inset -2px -2px 3px rgb(248, 247, 247),
+                                inset 2px 2px 7px rgba(0, 0, 0, 0.233);
+                }
+            }
         }
 
         .header_title h1,
@@ -40,10 +66,10 @@
         }
 
 
+
     }
 
     .header_img{
-        flex: 0.5;
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -56,7 +82,7 @@
             float: right;
 
             img{
-                max-width: 750px;
+                width: $desktop_img_width;
                 opacity: 1.0;
             }
         }
@@ -65,24 +91,54 @@
 }
 
 
+/* Phone Size */
+@media screen and (max-width: 640px){
+    .header_div{
+        padding-top: 6rem;
+    
+        .header_text{
+            padding: 0rem 1.5rem;
+    
+            .header_title{
+                h1{
+                    font-size: $phone_h1_font;
+                }
+    
+                h2{
+                    font-size: $phone_h2_font;
+                }
+            }
+    
+            .header_about{
+                font-size: $phone_p_font;
+            }
 
+            .header_button{
+                display: flex;
+                justify-content: center;
 
-@media screen and (max-width: 800px){
-    .header_text{
-        padding-left: 5vw;
+                button{
+                    width: 90%;
+                }
+            }
+    
+        }
+    
+        .header_img{    
+            .img_container{    
+                img{
+                    width: $phone_img_width;
+                }
+            }
+            
+        }
     }
 
-    .header_text h1{
-        font-size: 3.5rem;
-    }
 
-    .header_text .header_about{
-        max-width: fit-content;
-        font-size: var(--font-size-p-mobile);
-    }
 }
 
-@media screen and (max-width: 600px){
+/* Tablet Size */
+@media screen and (max-width: 767px){
 
 
 }
