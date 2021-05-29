@@ -1,9 +1,9 @@
 .navbar{
-    padding: 30px 10px;
+    padding: 25px 10px;
     font-family: 'Prata';
     font-weight: 600;
     font-size: larger;
-    background: rgb(247, 247, 232);
+    background: rgb(248, 253, 253);
 }
 
 .navbar-brand{
