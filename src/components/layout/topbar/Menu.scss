@@ -1,0 +1,48 @@
+@import '../../../global.scss';
+
+.menu{
+    width: 500px;
+    height: 100vh;
+    background-color: none;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            padding: 20px;
+
+            a{
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: #d80e0e;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &.active{
+        right: 0;
+    }
+
+    @media screen and (max-width: 640px){
+        width: 100%;
+    }
+}

@@ -6,10 +6,30 @@ import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import webLogo from '../../../assets/web_logo.png';
 
 
-export default function Topbar() {
+export default function Topbar({menuOpen, setMenuOpen}) {
     return (
-        <div className="topbar">
-            <Navbar expand="lg" collapseOnSelect bsPrefix="navbar">
+        <div className={`topbar ${menuOpen && "active"}`}>
+            <div className="wrapper">
+                <div className="left">
+                       <Link to="/"><img src={webLogo} alt=""></img></Link>
+                </div>
+                <div className="right">
+                  <div className="hambackground">
+                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                            <span className="line1"></span>
+                            <span className="line2"></span>
+                            <span className="line3"></span>
+                        </div>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+/*
+<Navbar expand="lg" collapseOnSelect bsPrefix="navbar">
                 <Navbar.Brand>
                     <Link to="/"><img src={webLogo} alt=""></img></Link>
                 </Navbar.Brand>
@@ -34,6 +54,6 @@ export default function Topbar() {
                 </Nav> 
                 </Navbar.Collapse>
             </Navbar>
-        </div>
-    )
-}
+
+
+*/
