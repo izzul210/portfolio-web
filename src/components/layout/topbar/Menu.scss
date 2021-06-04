@@ -24,15 +24,14 @@
             padding: 20px;
 
             a{
-                color: rgb(0, 0, 0);
+                color: $color-5;
                 text-decoration: none;
                 font-size: 1.2rem;
                 font-weight: 600;
                 transition: all 0.5s ease;
 
                 &:hover{
-                    color: #d80e0e;
-                    text-decoration: underline;
+                    color: $color-4;
                 }
             }
         }

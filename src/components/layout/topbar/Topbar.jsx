@@ -3,7 +3,7 @@ import './Topbar.scss';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 
-import webLogo from '../../../assets/web_logo.png';
+import webLogo from '../../../assets/logo.png';
 
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -11,7 +11,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={`topbar ${menuOpen && "active"}`}>
             <div className="wrapper">
                 <div className="left">
-                       <Link to="/"><img src={webLogo} alt=""></img></Link>
+                       <Link to="/"><img src={webLogo} alt=""></img>
+                                <h4>IZZUL SYAHMI</h4>
+                       </Link>
                 </div>
                 <div className="right">
                   <div className="hambackground">
@@ -27,33 +29,3 @@ export default function Topbar({menuOpen, setMenuOpen}) {
     )
 }
 
-
-/*
-<Navbar expand="lg" collapseOnSelect bsPrefix="navbar">
-                <Navbar.Brand>
-                    <Link to="/"><img src={webLogo} alt=""></img></Link>
-                </Navbar.Brand>
-
-
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                <Nav>
-                    <Link to="/">Home</Link>
-                </Nav> 
-                <Nav>
-                    <Link to="/about">About</Link>
-                </Nav> 
-                <Nav>
-                    <Link to="/projects">Projects</Link>
-                </Nav> 
-                <Nav>
-                    <Link to="/blog">Blog</Link>
-                </Nav> 
-                <Nav>
-                    <Link to="/artworks">Artworks</Link>
-                </Nav> 
-                </Navbar.Collapse>
-            </Navbar>
-
-
-*/
