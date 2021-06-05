@@ -12,7 +12,7 @@ class Portfolio extends Component{
                 <div className="portfolio_div">
                     <div className="portfolio_title">
                         <hr size="4" width="100%" color="#68273d"></hr>
-                        <h3> PORTFOLIO</h3>
+                        <h3>PORTFOLIO</h3>
                         <hr size="4" width="100%" color="#68273d"></hr>
                     </div>
 
