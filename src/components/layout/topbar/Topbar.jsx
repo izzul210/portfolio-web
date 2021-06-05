@@ -11,8 +11,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={`topbar ${menuOpen && "active"}`}>
             <div className="wrapper">
                 <div className="left">
-                       <Link to="/"><img src={webLogo} alt=""></img>
-                                <h4>IZZUL SYAHMI</h4>
+                       <Link to="/">
+                           <img src={webLogo} alt=""></img>
+                           <h4>IZZUL SYAHMI</h4>
                        </Link>
                 </div>
                 <div className="right">

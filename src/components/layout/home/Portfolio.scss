@@ -23,9 +23,19 @@
                 padding: 1rem 0.5rem;
             }
 
-            h3{
+            h5{
+                font-weight: 900;
+                color: $color-1;
+
+                @media screen and (max-width: 640px){
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2{
                 font-weight: 700;
                 margin: 1rem 0rem;
+                color: $color-5;
 
                 @media screen and (max-width: 640px){
                     font-size: 1.3rem;
@@ -53,7 +63,7 @@
                 }
 
                 p{
-                    margin: 5px;
+                    margin: 3px;
                     padding: 5px 10px;
                     background:rgb(94, 206, 94);
                     border: 0.5px solid rgba(0, 0, 0, 0.426);
@@ -87,7 +97,7 @@
                 }
 
                 .web_button{
-                    background: linear-gradient(50deg, rgb(182, 137, 158), rgb(179, 113, 160));
+                    background: linear-gradient(50deg, rgb(126, 126, 115), rgb(118, 118, 112));
                     border-radius: 50px;
 
                     &:hover{
@@ -157,16 +167,22 @@
         margin: 2rem 0rem;
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        hr{
+            margin: 0px 20px;
+        }
         
         h3{
             font-weight: 700;
+            letter-spacing: 3px;
             opacity: 0.75;
         }
     }
 
     .portfolio_webdev{
         .webdev_title{
-            color: $red_text;
+            color: $color-1;
             text-align: center;
   
         }

@@ -12,7 +12,9 @@ class Portfolio extends Component{
             <Fragment>
                 <div className="portfolio_div">
                     <div className="portfolio_title">
-                        <h3>Projects</h3>
+                        <hr size="5" width="100%" color="#68273d"></hr>
+                        <h3>PORTFOLIO</h3>
+                        <hr size="5" width="100%" color="#68273d"></hr>
                     </div>
                     <div className="portfolio_webdev">
                         <div className="webdev_title">
@@ -22,7 +24,8 @@ class Portfolio extends Component{
                             <div className="webdev_1">
                                 <div className="webdev_project">
                                     <div className="project_des">
-                                        <h3>Social Network Web App</h3>
+                                        <h5>Web App</h5>
+                                        <h2>Social Network Web App</h2>
                                         <p>Created a system that reads sound samples from an off-chip flash memory 
                                            and store them to the on-chip memory using a state machine.</p>
                                         <div className="project_tags">
@@ -47,11 +50,11 @@ class Portfolio extends Component{
                                         <img src={project2img} alt=""></img>
                                     </div>
                                     <div className="project_des">
-                                        <h3>Neuroevolution Racing Cars</h3>
+                                        <h5>Machine Learning Simulation</h5>
+                                        <h2>Neuroevolution Racing Cars</h2>
                                         <p> The samples are transferred to the audio core as an output by designing audio CODEC</p>
                                         <div className="project_tags">
-                                            <p>TensorflowJS</p>
-                                            <p>Machine Learning</p>
+                                            <p>TensorflowJS</p> 
                                             <p>p5.js</p>
                                             <p>HTML Canvas</p>
                                             <p>Javascript</p>
@@ -67,14 +70,15 @@ class Portfolio extends Component{
                             <div className="webdev_3">
                                 <div className="webdev_project">
                                     <div className="project_des">
-                                        <h3>Social Media Web App</h3>
+                                        <h5>Web App</h5>
+                                        <h2>Social Media Web App</h2>
                                         <p>Created a system that reads sound samples from an off-chip flash memory 
                                            and store them to the on-chip memory using a state machine.</p>
                                         <div className="project_tags">
                                             <p>ReactJS</p>
                                             <p>Redux</p>
                                             <p>Firebase</p>
-                                            <p>MaterialUI</p>
+                                            <p>Material UI</p>
                                         </div>
                                         <div className="project_buttons">
                                             <button className="web_button">View Site</button>

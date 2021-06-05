@@ -15,6 +15,11 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 640px){
+            padding: 5px 20px;
+            
+        }
+
         .left{
             a{
                 display: flex;
@@ -25,9 +30,9 @@
                 
 
                 h4{
-                    letter-spacing: 3px;
-                    color: black;
-                    opacity: 75%;
+                    letter-spacing: 4.5px;
+                    color: rgba(0, 0, 0, 0.898);
+                    opacity: 65%;
                     margin: 0px 10px;
                 }
 
@@ -73,6 +78,7 @@
                         transform-origin: left;
                         transition: all 0.5s ease;
                     }
+
                 }
 
                 @media screen and (max-width: 640px){
