@@ -19,7 +19,7 @@ export default function Engineering() {
                         </div>
                         <div className="project_des">
                             <h5>Control System</h5>
-                            <h5>SCARA Robotic Arm</h5>
+                            <h2>SCARA Robotic Arm</h2>
                             <p>Created a system that reads sound samples from an off-chip flash memory 
                                 and store them to the on-chip memory using a state machine.</p>
                             <div className="project_tags">
@@ -27,6 +27,9 @@ export default function Engineering() {
                                 <p>Redux</p>
                                 <p>NodeJS</p>
                                 <p>MongoDB</p>
+                            </div>
+                            <div className="project_buttons">
+                                <button className="more_button">View Project</button>
                             </div>
 
                         </div>
@@ -39,7 +42,19 @@ export default function Engineering() {
 
                         </div>
                         <div className="project_des">
-                            <h4>Recycle Robot</h4>
+                            <h5>Control System</h5>
+                            <h2>SCARA Robotic Arm</h2>
+                            <p>Created a system that reads sound samples from an off-chip flash memory 
+                                and store them to the on-chip memory using a state machine.</p>
+                            <div className="project_tags">
+                                <p>ReactJS</p>
+                                <p>Redux</p>
+                                <p>NodeJS</p>
+                                <p>MongoDB</p>
+                            </div>
+                            <div className="project_buttons">
+                                <button className="more_button">View Project</button>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -50,7 +65,19 @@ export default function Engineering() {
 
                         </div>
                         <div className="project_des">
-                            <h4>Recycle Robot</h4>
+                            <h5>Control System</h5>
+                            <h2>SCARA Robotic Arm</h2>
+                            <p>Created a system that reads sound samples from an off-chip flash memory 
+                                and store them to the on-chip memory using a state machine.</p>
+                            <div className="project_tags">
+                                <p>ReactJS</p>
+                                <p>Redux</p>
+                                <p>NodeJS</p>
+                                <p>MongoDB</p>
+                            </div>
+                            <div className="project_buttons">
+                                <button className="more_button">View Project</button>
+                            </div>
                         </div>
                     </div>
                 </div>         
