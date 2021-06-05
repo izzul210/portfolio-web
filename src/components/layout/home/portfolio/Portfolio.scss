@@ -1,4 +1,4 @@
-@import '../../../global.scss';
+@import '../../../../global.scss';
 
 //Default webdev_project template:
 .webdev_project{
@@ -160,7 +160,7 @@
     margin: 5rem 2rem;
 
     @media screen and (max-width: 640px){
-        margin: 5rem 1rem;
+        margin: 5rem 1.2rem;
     }
 
     .portfolio_title{
@@ -171,21 +171,22 @@
 
         hr{
             margin: 0px 20px;
+
+            @media screen and (max-width: 640px){
+                margin: 0px 10px;
+            }
         }
         
         h3{
             font-weight: 700;
             letter-spacing: 3px;
             opacity: 0.75;
+            
         }
     }
 
     .portfolio_webdev{
-        .webdev_title{
-            color: $color-1;
-            text-align: center;
-  
-        }
+        margin: 5rem 0rem;
         
         .webdev_portfolios{
             display: flex;
@@ -258,7 +259,50 @@
                 }
             }
 
+            .more_work{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 35px;
+
+                button{
+                    border: 1px solid rgba(0, 0, 0, 0.433);
+                    color: rgb(255, 255, 255);
+                    background: $color-4;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    transition: all .1s ease;
+
+                    &:hover{
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                    }
+
+                    @media screen and (max-width: 640px){
+                        width: 100%;
+                    }
+                }
+            }
+
         }
     }
+}
+
+.title{
+    color: $color-1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    h5{
+        display: flex;
+        flex-direction: row;
+        
+        svg{
+            margin: 0px 10px;
+        }
+    }
+
 }
 
