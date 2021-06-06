@@ -328,9 +328,17 @@
 
     .project_img{
         height: 20rem;
-        background-color: red;
+        background-color: none;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
+        border-bottom: 2px solid $color-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../../../assets/engine2.png');
+        background-position: center ;
+        background-size: cover;
+
     }
 
     .project_des{

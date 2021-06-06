@@ -1,5 +1,7 @@
 import React from 'react';
 import { GiRobotGrab } from 'react-icons/gi'; 
+import engine1img from '../../../../assets/engine1.jpg';
+import engine2img from '../../../../assets/engine2.png';
 
 
 export default function Engineering() {
@@ -15,7 +17,6 @@ export default function Engineering() {
                 <div className="engine_1">
                     <div className="engine_project">
                         <div className="project_img">
-
                         </div>
                         <div className="project_des">
                             <h5>Control System</h5>
@@ -39,7 +40,6 @@ export default function Engineering() {
                 <div className="engine_1">
                     <div className="engine_project">
                         <div className="project_img">
-
                         </div>
                         <div className="project_des">
                             <h5>Control System</h5>
