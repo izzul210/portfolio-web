@@ -3,6 +3,18 @@ import './Webdev.scss';
 import project1img from '../../../../assets/socialnetwork1.png';
 import project2img from '../../../../assets/racingcar.png';
 import project3img from '../../../../assets/socialmedia.png';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
+// import Swiper core and required modules
+import SwiperCore, { Autoplay,Pagination,Navigation} from 'swiper/core';
+
+SwiperCore.use([Autoplay,Pagination,Navigation]);
+
+
 
 export default function Webdev() {
     return (
@@ -38,7 +50,16 @@ export default function Webdev() {
                             </div>
                         </div>
                         <div className="project_img">
-                            <img src={project1img} alt=""></img>
+                            <Swiper spaceBetween={30} 
+                                    centeredSlides={true} 
+                                    autoplay={{"delay": 2500,"disableOnInteraction": false }} 
+                                    pagination={{"clickable": true}} 
+                                    className="mySwiper">
+                                    <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                 </div>
@@ -86,7 +107,16 @@ export default function Webdev() {
                             </div>
                         </div>
                         <div className="project_img">
-                            <img src={project3img} alt=""></img>
+                            <Swiper spaceBetween={30} 
+                                    centeredSlides={true} 
+                                    autoplay={{"delay": 2500,"disableOnInteraction": false }} 
+                                    pagination={{"clickable": true}} 
+                                    className="mySwiper">
+                                    <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
+                                    <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
+                            </Swiper>
                         </div>
                      </div>
                  </div>
