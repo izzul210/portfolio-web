@@ -17,7 +17,7 @@ export default function Engineering() {
 
             <div className="engine_portfolios">
 
-                <div className="engine_1">
+                <div className="engine">
                     <div className="engine_project">
                         <div className="project_img engine1">
                         </div>
@@ -42,7 +42,7 @@ export default function Engineering() {
                     </div>
                 </div> 
 
-                <div className="engine_1 ">
+                <div className="engine">
                     <div className="engine_project">
                         <div className="project_img engine2">
                         </div>
@@ -66,7 +66,7 @@ export default function Engineering() {
                     </div>
                 </div> 
 
-                <div className="engine_1">
+                <div className="engine">
                     <div className="engine_project">
                         <div className="project_img engine3">
 
