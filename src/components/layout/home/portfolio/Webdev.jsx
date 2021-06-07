@@ -95,7 +95,7 @@ export default function Webdev() {
                  </div>
 
                  <div className="more_work">
-                     <button >View More Web Dev Projects</button>
+                     <button >See all Web Dev projects</button>
                  </div>
 
              </div>
