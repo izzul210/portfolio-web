@@ -4,7 +4,7 @@ class Projects extends Component{
     render(){
         return(
             <Fragment>
-                <div>
+                <div style={{"margin": "20rem", "display": "flex", "justifyContent":"center"}}>
                     <p>This is in Projects.js</p>
                 </div>
             </Fragment>

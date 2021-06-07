@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 
 import Webdev from './Webdev';
 import Engineering from './Engineering';
-
 import './Portfolio.scss';
 
 class Portfolio extends Component{

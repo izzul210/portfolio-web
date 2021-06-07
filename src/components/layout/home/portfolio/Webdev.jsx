@@ -1,6 +1,5 @@
 import React from 'react';
-import { GiSpiderWeb } from 'react-icons/gi';
-
+import './Webdev.scss';
 import project1img from '../../../../assets/socialnetwork1.png';
 import project2img from '../../../../assets/racingcar.png';
 import project3img from '../../../../assets/socialmedia.png';
@@ -8,7 +7,6 @@ import project3img from '../../../../assets/socialmedia.png';
 export default function Webdev() {
     return (
         <div className="portfolio_webdev">
-
             <div className="title">
                 <h5>
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{"width": "100px", "height": "100px"}}>
@@ -39,7 +37,6 @@ export default function Webdev() {
                                 <button className="more_button">Learn More</button>
                             </div>
                         </div>
-
                         <div className="project_img">
                             <img src={project1img} alt=""></img>
                         </div>
@@ -95,9 +92,8 @@ export default function Webdev() {
                  </div>
 
                  <div className="more_work">
-                     <button >See all Web Dev projects</button>
+                     <button>See all Web Dev projects</button>
                  </div>
-
 
              </div>
         </div>

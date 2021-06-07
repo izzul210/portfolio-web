@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { init } from 'ityped';
+import './Header.scss';
 
 import headerImage from '../../../assets/default_header.png';
 

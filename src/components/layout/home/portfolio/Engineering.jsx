@@ -1,9 +1,5 @@
 import React from 'react';
-import { GiRobotGrab } from 'react-icons/gi'; 
-import { motion, MotionConfig } from 'framer-motion';
-import engine1img from '../../../../assets/engine1.jpg';
-import engine2img from '../../../../assets/engine2.png';
-
+import './Engineering.scss';
 
 export default function Engineering() {
     return (

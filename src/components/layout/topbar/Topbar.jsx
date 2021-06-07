@@ -1,7 +1,6 @@
 import React from 'react';
 import './Topbar.scss';
-import { Nav, Navbar } from 'react-bootstrap';
-import { Route, Switch, Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import webLogo from '../../../assets/logo.png';
 

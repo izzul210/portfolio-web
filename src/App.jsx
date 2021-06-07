@@ -1,6 +1,5 @@
-import React, {Fragment } from 'react';
-import { Route, Switch, Link, withRouter } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import {React, useState} from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
 /** Components **/
 import Home from './components/layout/home/Home';
@@ -15,11 +14,6 @@ import Menu from './components/layout/topbar/Menu';
 /** CSS **/
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import './Navbar.css';
-
-/** PNG files  **/
-
-import { useState } from 'react';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

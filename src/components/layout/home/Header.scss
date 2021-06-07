@@ -4,7 +4,7 @@
     background: linear-gradient( 180deg, rgb(255, 255, 255), $color-2);
     margin: 3rem 0rem;
     border-radius: 0rem;
-    padding-top: 9rem;
+    padding-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +13,7 @@
 
     @media screen and (max-width: 640px){
         margin: 1rem 0rem;
-        border-radius: 1.5rem;
-
+        border-radius: 2rem;
     }
 
     .header_text{
@@ -23,16 +22,28 @@
         justify-content: center;
         padding-left: 5vw;
 
+        @media screen and (max-width: 640px){
+            padding: 0rem 1.5rem;
+        }
+
         .header_title{
             h1{
                 font-size: $desktop_h1_font;
                 font-weight: 700;
                 color: $color-5;
+
+                @media screen and (max-width: 640px){
+                    font-size: $phone_h1_font;
+                }
             }
 
             h2{
                 color: $color-1;
                 font-size: $dekstop_h2_font;
+
+                @media screen and (max-width: 640px){
+                    font-size: $phone_h2_font;
+                }
             }
         }
 
@@ -41,9 +52,18 @@
             max-width: 45rem;
             font-size: $dekstop_p_font;
             opacity: 0.85;
+
+            @media screen and (max-width: 640px){
+                font-size: $phone_p_font;
+            }
         }
 
         .header_button{
+            @media screen and (max-width: 640px){
+                display: flex;
+                justify-content: center;
+            }
+
             button{
                 color: rgb(255, 255, 255);
                 padding: 15px 50px;
@@ -81,8 +101,6 @@
             padding-bottom: 10px;
         }
 
-
-
     }
 
     .header_img{
@@ -100,58 +118,12 @@
             img{
                 width: $desktop_img_width;
                 opacity: 1.0;
+
+                @media screen and (max-width: 640px){
+                    width: $phone_img_width;
+                }
             }
         }
         
     }
-}
-
-
-/* Phone Size */
-@media screen and (max-width: 640px){
-    .header_div{
-        padding-top: 7rem;
-    
-        .header_text{
-            padding: 0rem 1.5rem;
-    
-            .header_title{
-                h1{
-                    font-size: $phone_h1_font;
-                }
-    
-                h2{
-                    font-size: $phone_h2_font;
-                }
-            }
-    
-            .header_about{
-                font-size: $phone_p_font;
-            }
-
-            .header_button{
-                display: flex;
-                justify-content: center;
-
-            }
-    
-        }
-    
-        .header_img{    
-            .img_container{    
-                img{
-                    width: $phone_img_width;
-                }
-            }
-            
-        }
-    }
-
-
-}
-
-/* Tablet Size */
-@media screen and (max-width: 767px){
-
-
 }

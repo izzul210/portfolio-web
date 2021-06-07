@@ -1,7 +1,4 @@
 import React, { Component, Fragment } from 'react';
-
-import './Home.scss';
-
 import Header from './Header';
 import Portfolio from './portfolio/Portfolio';
 import Contact from './Contact';

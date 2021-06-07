@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.scss';
-import { Route, Switch, Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function Menu({menuOpen, setMenuOpen}) {
