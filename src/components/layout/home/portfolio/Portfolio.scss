@@ -2,10 +2,10 @@
 
 //Portfolio Div CSS:
 .portfolio_div{
-    margin: 5rem 2rem;
+    margin: 5rem 0rem;
 
     @media screen and (max-width: 640px){
-        margin: 5rem 1.2rem;
+        margin: 5rem 0rem;
     }
 
     .portfolio_title{
@@ -31,7 +31,7 @@
     }
 
     .title{
-        color: $color-1;
+        color: $color-5;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -39,15 +39,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        transform: translateX(-3%);
 
         @media screen and (max-width: 640px){
-            justify-content: flex-start;
+            justify-content: center;
         }
     
         h5{
             display: flex;
-            flex-direction: row;
+            flex-direction: column-reverse;
             align-items: center;
             
             svg{
@@ -218,8 +217,13 @@
 
 //Webdev Portfolio section:
 .portfolio_webdev{
-    margin: 3rem 0rem;
+    padding: 1rem 2rem;
+
+    @media screen and (max-width: 640px){
+        padding: 1rem 1.2rem;
+    }
     
+
     .webdev_portfolios{
         display: flex;
         flex-direction: column;
@@ -339,12 +343,20 @@
     &:hover{
         box-shadow: 0 7px 20px rgba(38, 38, 38, 0.501);
         
-        .project_img{
+        .engine1{
             background-size: 40rem;
+        }
+
+        .engine2{
+            background-size: 33rem;
+        }
+
+        .engine3{
+            background-size: 37rem;
         }
         
         .project_des{
-            background: rgb(250, 171, 25);
+            background: rgb(216, 150, 27);
 
             h5{
                 color: $color-2;
@@ -361,7 +373,7 @@
             .project_tags{
                 p{
                     color: black;
-                    background: white;
+                    background: rgb(213, 211, 211);
                     border: 1px solid rgba(0, 0, 0, 0.433);
                 }
             }
@@ -386,16 +398,15 @@
 
     .project_img{
         height: 20rem;
-        background-color: none;
+        background-color: rgb(255,255,255);
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         border-bottom: 2px solid $color-2;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('../../../../assets/engine2.png');
         background-position: center ;
-        background-size: 35rem;
+        
         background-repeat: no-repeat;
         transition:all 0.5s ease-in-out;
         
@@ -403,14 +414,14 @@
     }
 
     .project_des{
-        height: 25rem;
+        height: 30rem;
         background: rgb(255, 255, 255);
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-start;
         transition: all 0.5s ease-in-out;
 
@@ -476,6 +487,11 @@
             display: flex;
             justify-content: flex-end;
             width: 100%;
+            height: 100%;
+            align-content: flex-end;
+            align-items: flex-end;
+
+            
             
             button{
                 margin-right: 1rem;
@@ -488,8 +504,11 @@
                 border: none;
                 font-weight: 500;
                 transition: all .1s ease-in-out;
+                height: 4rem;
 
-                
+                @media screen and (max-width: 640px){
+                    margin: 0rem;
+                }
             }
 
             .more_button{
@@ -517,6 +536,30 @@
     }
 }
 
+.engine1{
+    background-image: url('../../../../assets/engine2.png');
+    background-size: 35rem;
+
+}
+
+.engine2{
+    background-image: url('../../../../assets/engine3.png');
+    background-size: 29rem;
+
+    @media screen and (max-width: 640px){
+        background-size: 25rem;
+    }
+}
+
+.engine3{
+    background-image: url('../../../../assets/engine4.png');
+    background-size: 33rem;
+
+    @media screen and (max-width: 640px){
+        background-size: 28rem;
+    }
+}
+
 
 .engine_portfolios{
     display: flex;
@@ -524,6 +567,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
+    flex-wrap: wrap;
     
 
     @media screen and (max-width: 640px){
@@ -532,21 +576,25 @@
     }
 
     .engine_1{
-        margin: 0px 0rem;
+        margin: 1rem 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        
 
         @media screen and (max-width: 640px){
             margin: 1rem 0rem;
+            width: 100%;
         }
     }
 }
 
 .portfolio_engine{
-    .title{
-        
+    background: linear-gradient( rgb(255, 255, 255), rgb(250, 242, 232),);
+    padding: 1rem 2rem;
+
+    @media screen and (max-width: 640px){
+        padding: 1rem 1.2rem;
     }
 }
 

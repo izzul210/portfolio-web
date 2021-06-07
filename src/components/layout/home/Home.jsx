@@ -4,6 +4,7 @@ import './Home.scss';
 
 import Header from './Header';
 import Portfolio from './portfolio/Portfolio';
+import Contact from './Contact';
 
 class Home extends Component{
     render(){
@@ -11,6 +12,7 @@ class Home extends Component{
           <Fragment >
             <Header />
             <Portfolio />
+            <Contact />
           </Fragment> 
         )
     }
