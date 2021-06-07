@@ -35,11 +35,20 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        margin: 2rem 0rem;
+        margin: 1rem 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transform: translateX(-3%);
+
+        @media screen and (max-width: 640px){
+            justify-content: flex-start;
+        }
     
         h5{
             display: flex;
             flex-direction: row;
+            align-items: center;
             
             svg{
                 margin: 0px 10px;
@@ -209,7 +218,7 @@
 
 //Webdev Portfolio section:
 .portfolio_webdev{
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
     
     .webdev_portfolios{
         display: flex;
@@ -481,6 +490,60 @@
         }
     }
 }
+
+.portfolio_engine{
+    .title{
+        
+    }
+}
+
+
+
+//SVG: Code
+.line-terminal1 {
+    animation: line-terminal1-blink 1s infinite;
+}
+@keyframes line-terminal1-blink{
+    0%{visibility: visible;}
+    50%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
+@media (prefers-reduced-motion: reduce) {
+    .line-terminal1 {
+        animation: none;
+    }
+}
+
+//SVG: Astrounaut-man
+@keyframes astronaut1-man {
+    0%{
+        transform: translate3d(0, -8px, 0);
+    }
+    50%{
+        transform: translate3d(0, 8px, 0);
+    }
+    100%{
+        transform: translate3d(0, -8px, 0);
+    }
+}
+@keyframes astronaut1-right-star {
+    0%{transform: translate3d(0, 0, 0);}
+    50%{transform: translate3d(0, 10px, 0);}
+    100%{transform: translate3d(0, 0, 0);}
+}
+@media (prefers-reduced-motion: reduce) {
+    .astronaut1-man, .astronaut1-right-star, .astronaut1-left-star, .astronaut1-right-spec, .astronaut1-left-spec, .astronaut1-bottom-spec, .astronaut1-right-rock, .astronaut1-left-rock {
+        animation: none;
+    }
+}
+.astronaut1-man {animation:astronaut1-man 4s infinite;}
+.astronaut1-right-star {animation:astronaut1-right-star 4s 200ms infinite;}
+.astronaut1-left-star {animation:astronaut1-right-star 4s 400ms infinite;}
+.astronaut1-right-spec {animation:astronaut1-right-star 4s 600ms infinite;}
+.astronaut1-left-spec {animation:astronaut1-right-star 4s 800ms infinite;}
+.astronaut1-bottom-spec {animation:astronaut1-right-star 4s 300ms infinite;}
+.astronaut1-right-rock {animation:astronaut1-right-star 4s 1s infinite;}
+.astronaut1-left-rock {animation:astronaut1-right-star 4s 1200ms infinite;}
 
 
 

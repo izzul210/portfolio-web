@@ -10,7 +10,13 @@ export default function Webdev() {
         <div className="portfolio_webdev">
 
             <div className="title">
-                <h5><GiSpiderWeb />Web Development</h5>
+                <h5>
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{"width": "100px", "height": "100px"}}>
+                        <path class="stroke1" d="M22 31L39.5688 48.5688C40.3499 49.3499 40.3499 50.6162 39.5688 51.3973L22 68.9661" stroke="rgb(250, 148, 77)" stroke-width="2.5px" style={{"animation-duration": "0.4s"}}></path>
+                        <line class="line-terminal1 stroke2" x1="40.9833" y1="67.9661" x2="78.9494" y2="67.9661" stroke="rgb(250, 148, 77)" stroke-width="3.5px" style={{"animation-duration": "0.4s"}}></line>
+                    </svg>
+                    Web Development
+                </h5>
             </div>
 
             <div className="webdev_portfolios">
@@ -96,5 +102,4 @@ export default function Webdev() {
         </div>
     )
 }
-
 
