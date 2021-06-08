@@ -40,7 +40,7 @@ export default function Webdev() {
                             <div className="project_tags">
                                 <img src={reactJS} alt="" style={{"width":"6.5rem"}}></img>
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
-                                <img src={node} alt="" style={{"width":"6.5rem"}}></img>
+                                <img src={node} alt="" style={{"width":"5.5rem"}}></img>
                                 <img src={mongo} alt="" style={{"width":"5.5rem"}}></img>
                                 
                             </div>
