@@ -46,12 +46,12 @@
 
     h4{
         color: $color-1;
-        opacity: 80%;
+        opacity: 0.8;
     }
 
     h3{
         letter-spacing: 2px;
-        opacity: 90%;
+        opacity: 0.9;
 
         @media screen and (max-width: 640px){
             letter-spacing: 0.5px;
