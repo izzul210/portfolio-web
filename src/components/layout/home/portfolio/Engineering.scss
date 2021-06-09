@@ -26,8 +26,16 @@
             background-size: 33rem;
         }
 
-        .engine3{
+        .engine3, .engine4{
             background-size: 37rem;
+        }
+
+        .engine6{
+            background-size: 37rem;
+        }
+
+        .engine5{
+            background-size: 30rem;
         }
         
         .project_des{
@@ -85,6 +93,9 @@
         background-repeat: no-repeat;
         transition:all 0.5s ease-in-out;
         
+        @media screen and (max-width: 640px){
+            height: 18rem;
+        }
 
     }
 
@@ -166,6 +177,14 @@
             align-content: flex-end;
             align-items: flex-end;
 
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Work Sans', serif;
+                font-size: medium;
+                font-weight: 500;
+            }
+
             
             
             button{
@@ -235,6 +254,33 @@
     }
 }
 
+.engine4{
+    background-image: url('../../../../assets/engine7.png');
+    background-size: 33rem;
+
+    @media screen and (max-width: 640px){
+        background-size: 28rem;
+    }
+}
+
+.engine6{
+    background-image: url('../../../../assets/engine5.png');
+    background-size: 33rem;
+
+    @media screen and (max-width: 640px){
+        background-size: 28rem;
+    }
+}
+
+.engine5{
+    background-image: url('../../../../assets/engine6.png');
+    background-size: 28rem;
+
+    @media screen and (max-width: 640px){
+        background-size: 23rem;
+    }
+}
+
 
 .engine_portfolios{
     display: flex;
@@ -278,28 +324,13 @@
 
 
 //SVG: Astrounaut-man
-@keyframes astronaut1-man {
-    0%{
-        transform: translate3d(0, -8px, 0);
-    }
-    50%{
-        transform: translate3d(0, 8px, 0);
-    }
-    100%{
-        transform: translate3d(0, -8px, 0);
-    }
-}
-@keyframes astronaut1-right-star {
-    0%{transform: translate3d(0, 0, 0);}
-    50%{transform: translate3d(0, 10px, 0);}
-    100%{transform: translate3d(0, 0, 0);}
-}
-@media (prefers-reduced-motion: reduce) {
-    .astronaut1-man, .astronaut1-right-star, .astronaut1-left-star, .astronaut1-right-spec, .astronaut1-left-spec, .astronaut1-bottom-spec, .astronaut1-right-rock, .astronaut1-left-rock {
-        animation: none;
-    }
-}
 .astronaut1-man {animation:astronaut1-man 4s infinite;}
+@keyframes astronaut1-man {
+         0%{transform: translate3d(0, -8px, 0);}
+         50%{transform: translate3d(0, 8px, 0);}
+         100%{transform: translate3d(0, -8px, 0);}
+}
+
 .astronaut1-right-star {animation:astronaut1-right-star 4s 200ms infinite;}
 .astronaut1-left-star {animation:astronaut1-right-star 4s 400ms infinite;}
 .astronaut1-right-spec {animation:astronaut1-right-star 4s 600ms infinite;}
@@ -307,6 +338,25 @@
 .astronaut1-bottom-spec {animation:astronaut1-right-star 4s 300ms infinite;}
 .astronaut1-right-rock {animation:astronaut1-right-star 4s 1s infinite;}
 .astronaut1-left-rock {animation:astronaut1-right-star 4s 1200ms infinite;}
+
+@keyframes astronaut1-right-star {
+    0%{transform: translate3d(0, 0, 0);}
+    50%{transform: translate3d(0, 10px, 0);}
+    100%{transform: translate3d(0, 0, 0);}
+}
+     
+@media (prefers-reduced-motion: reduce) {
+    .astronaut1-man, 
+    .astronaut1-right-star, 
+    .astronaut1-left-star, 
+    .astronaut1-right-spec, 
+    .astronaut1-left-spec, 
+    .astronaut1-bottom-spec, 
+    .astronaut1-right-rock, 
+    .astronaut1-left-rock {
+        animation: none;
+    }
+ }
 
 
 
