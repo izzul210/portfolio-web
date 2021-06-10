@@ -1,5 +1,6 @@
 import React from 'react';
 import './Engineering.scss';
+import { Link } from 'react-router-dom';
 
 import reportPDF from '../../../../assets/Control_for_SCARA_Robot.pdf';
 
@@ -26,7 +27,7 @@ export default function Engineering() {
                             <h5>Control System & Robotics</h5>
                             <h2>SCARA Robotic Arm</h2>
                             <p>
-                                Designed a Control System of SCARA Robtic Arm with 3 DOF that moves in a 2D plane to grab faulty objects and relseases them into a near bin.
+                                Designed a Control System of SCARA Robotic Arm with 3 DOF that moves in a 2D plane to grab faulty objects and releases them into a near bin.
                             </p>
                             <div className="project_tags">
                                 <p>PID Controller</p>
@@ -36,11 +37,9 @@ export default function Engineering() {
                                 <p>Microcontroller</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">
-                                    <a href={reportPDF}
-                                       download="SCARArobot_control.pdf">Download Report
-                                    </a>
-                                </button>
+                                <a href={reportPDF} download="SCARArobot_control.pdf">
+                                    <button className="more_button">Download Report</button>
+                                </a>
                             </div>
 
                         </div>
@@ -65,7 +64,9 @@ export default function Engineering() {
                                 <p>HOG</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">View Project</button>
+                                <Link to="/projects/plantdetection">
+                                    <button className="more_button">View Project</button>
+                                </Link>           
                             </div>
                         </div>
                     </div>
@@ -106,12 +107,13 @@ export default function Engineering() {
                                 <p>CODEC</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">
-                                    <a href="https://github.com/izzul210/flash_memory_reader" 
-                                       target="_blank" 
-                                       rel="noreferrer">View on GitHub
-                                    </a>
-                                </button>
+                                <a href="https://github.com/izzul210/flash_memory_reader" 
+                                    target="_blank" 
+                                    rel="noreferrer">
+                                    <button className="more_button">
+                                     View on GitHub
+                                    </button>               
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +122,6 @@ export default function Engineering() {
                 <div className="engine">
                     <div className="engine_project">
                         <div className="project_img engine5">
-
                         </div>
                         <div className="project_des">
                             <h5>Microcomputers</h5>
@@ -132,12 +133,13 @@ export default function Engineering() {
                                 <p>DE1-SoC</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">
-                                    <a href="https://github.com/izzul210/data_cache_performance" 
-                                       target="_blank" 
-                                       rel="noreferrer">View on GitHub
-                                    </a>
-                                </button>
+                                <a href="https://github.com/izzul210/data_cache_performance" 
+                                    target="_blank" 
+                                    rel="noreferrer">
+                                    <button className="more_button">
+                                     View on GitHub
+                                    </button>               
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -145,9 +147,7 @@ export default function Engineering() {
 
                 <div className="engine">
                     <div className="engine_project">
-                        <div className="project_img engine6">
-
-                        </div>
+                        <div className="project_img engine6"></div>
                         <div className="project_des">
                             <h5>Digital System Design</h5>
                             <h2>ARC4 Decryption</h2>
@@ -158,20 +158,19 @@ export default function Engineering() {
                                 <p>DE1-SoC</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">
-                                    <a href="https://github.com/izzul210/arc4decryption" 
-                                       target="_blank" 
-                                       rel="noreferrer">View on GitHub
-                                    </a>
-                                </button>
+                                <a href="https://github.com/izzul210/arc4decryption"  
+                                        target="_blank" 
+                                        rel="noreferrer">
+                                    <button className="more_button">
+                                        View on GitHub
+                                    </button>               
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>    
 
-
             </div>
-            
         </div>
     )
 }

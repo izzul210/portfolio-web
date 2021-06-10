@@ -8,6 +8,8 @@ import Projects from './components/layout/projects/Projects';
 import Blog from './components/layout/blog/Blog';
 import Artworks from './components/layout/artworks/Artworks';
 
+import PlantDetection from './components/layout/projects/plant_detection/PlantDetection';
+
 import Topbar from './components/layout/topbar/Topbar';
 import Menu from './components/layout/topbar/Menu';
 
@@ -29,6 +31,7 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/artworks" component={Artworks} />
+          <Route exact path="/projects/plantdetection" component={PlantDetection} />
         </Switch>
       </div>
     </div>
