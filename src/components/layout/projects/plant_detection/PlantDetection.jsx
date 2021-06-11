@@ -8,6 +8,11 @@ import plant3 from '../../../../assets/projects/plant/plant3.png';
 import plant4 from '../../../../assets/projects/plant/plant4.png';
 import plant5 from '../../../../assets/projects/plant/plant5.png';
 import plant6 from '../../../../assets/projects/plant/plant6.png';
+import plant7 from '../../../../assets/projects/plant/plant7.png';
+import plant8 from '../../../../assets/projects/plant/plant8.png';
+import plant9 from '../../../../assets/projects/plant/plant9.png';
+import plant10 from '../../../../assets/projects/plant/plant10.png';
+import plant12 from '../../../../assets/projects/plant/plant12.png';
 
 export default function PlantDetection() {
     return (
@@ -92,7 +97,7 @@ export default function PlantDetection() {
 
                 <div className="content_7">
                     <h2 className="content_title">
-                        Evaluation & Conclusion Part 1
+                        Evaluation Part 1
                     </h2>
                     <div className="content_points">
                         <ul><li>K-Mean works best when there are few datasets to train
@@ -108,6 +113,66 @@ export default function PlantDetection() {
                             </li>
                         </ul>
                         <img src={plant6} alt=""></img>
+                    </div>
+                </div>
+
+                <div className="content_8">
+                    <h2 className="content_title">
+                        Histogram of Oriented Gradient (HOG)
+                    </h2>
+                    <div className="content_points">
+                        <p>HOG is a feature descriptor used to detect objects in computer visions image processing</p>
+                        <img src={plant7} alt=""></img>
+                    </div>
+                </div>
+
+                <div className="content_9">
+                  <h5>Our HOG and ANN architecture</h5>
+                  <img src={plant8} alt=""></img>
+                </div>
+                
+                <div className="content_10">
+                    <h2 className="content_title">
+                        Results Summary:
+                    </h2>
+                    <div className="content_points">
+                        <img src={plant9} alt=""></img>
+                    </div>
+                </div>
+                
+                <div className="content_11">
+                    <h2 className="content_title">
+                        Evaluation Part 2
+                    </h2>
+                    <div className="content_points">
+                        <ul><li>HOG works well with objects (or  faces)
+                              <ul>
+                                <li>More obvious color changes (gradient) between pixels</li>
+                                <li>Features can be easily extracted</li>
+                              </ul>
+                            </li>
+                            <img src={plant10} alt="" style={{"width": "15rem"}}></img>
+                            <li>HOG performs badly with leaves:
+                              <ul>
+                                <li>Only able to strongly detect the shapes of the leaf</li>
+                                <li>Most spots/diseases have nearly the same range of color - less gradient for HOG to extract as features</li>
+                              </ul>
+                            </li>
+                            <img src={plant12} alt=""></img>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="content_12">
+                    <h2 className="content_title">
+                        Conclusion
+                    </h2>
+                    <div className="content_points">
+                        <ul>
+                            <li>K-mean clustering works best only with small training datasets of leaves as it provides extra information by clustering the colors before entering the CNN.</li>
+                            <li>Further understanding of HOG is crucial for feature extraction of leaf images.</li>
+                            <li>Using a complete CNN with bigger parameters performs better than combining two independent NN with two image processing algorithm</li>
+                        </ul>
                     </div>
                 </div>
 
