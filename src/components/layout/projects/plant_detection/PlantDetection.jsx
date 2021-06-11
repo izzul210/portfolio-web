@@ -43,6 +43,8 @@ export default function PlantDetection() {
                     </div>
                 </div>
 
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
+
                 <div className="content_3">
                     <h2 className="content_title">
                         K-Mean Clustering
@@ -60,6 +62,8 @@ export default function PlantDetection() {
                         <img src={plant2} alt=""></img>
                     </div>
                 </div>
+
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
 
                 <div className="content_5">
                     <h2 className="content_title">
@@ -80,6 +84,8 @@ export default function PlantDetection() {
                     </div>
                 </div>
 
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
+
                 <div className="content_6">
                     <h2 className="content_title">
                         Results & Analysis
@@ -94,6 +100,8 @@ export default function PlantDetection() {
                         <img src={plant5} alt="" style={{"marginBottom":"1.5rem"}}></img>
                     </div>
                 </div>
+
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
 
                 <div className="content_7">
                     <h2 className="content_title">
@@ -116,6 +124,8 @@ export default function PlantDetection() {
                     </div>
                 </div>
 
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
+
                 <div className="content_8">
                     <h2 className="content_title">
                         Histogram of Oriented Gradient (HOG)
@@ -130,6 +140,8 @@ export default function PlantDetection() {
                   <h5>Our HOG and ANN architecture</h5>
                   <img src={plant8} alt=""></img>
                 </div>
+
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
                 
                 <div className="content_10">
                     <h2 className="content_title">
@@ -139,6 +151,8 @@ export default function PlantDetection() {
                         <img src={plant9} alt=""></img>
                     </div>
                 </div>
+
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
                 
                 <div className="content_11">
                     <h2 className="content_title">
@@ -162,6 +176,8 @@ export default function PlantDetection() {
                         </ul>
                     </div>
                 </div>
+
+                <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
 
                 <div className="content_12">
                     <h2 className="content_title">
