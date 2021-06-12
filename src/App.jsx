@@ -9,6 +9,7 @@ import Blog from './components/layout/blog/Blog';
 import Artworks from './components/layout/artworks/Artworks';
 
 import PlantDetection from './components/layout/projects/plant_detection/PlantDetection';
+import RecycleRobot from './components/layout/projects/recycle_robot/RecycleRobot';
 
 import Topbar from './components/layout/topbar/Topbar';
 import Menu from './components/layout/topbar/Menu';
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/artworks" component={Artworks} />
           <Route exact path="/projects/plantdetection" component={PlantDetection} />
+          <Route exact path="/projects/recyclerobot" component={RecycleRobot} />
         </Switch>
       </div>
     </div>

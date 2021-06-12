@@ -8,11 +8,14 @@ import plant3 from '../../../../assets/projects/plant/plant3.png';
 import plant4 from '../../../../assets/projects/plant/plant4.png';
 import plant5 from '../../../../assets/projects/plant/plant5.png';
 import plant6 from '../../../../assets/projects/plant/plant6.png';
-import plant7 from '../../../../assets/projects/plant/plant7.png';
 import plant8 from '../../../../assets/projects/plant/plant8.png';
 import plant9 from '../../../../assets/projects/plant/plant9.png';
 import plant10 from '../../../../assets/projects/plant/plant10.png';
-import plant12 from '../../../../assets/projects/plant/plant12.png';
+import plant7a from '../../../../assets/projects/plant/plant7a.png';
+import plant7b from '../../../../assets/projects/plant/plant7b.png';
+import plant12a from '../../../../assets/projects/plant/plant12a.png';
+import plant12b from '../../../../assets/projects/plant/plant12b.png';
+
 
 export default function PlantDetection() {
     return (
@@ -132,7 +135,8 @@ export default function PlantDetection() {
                     </h2>
                     <div className="content_points">
                         <p>HOG is a feature descriptor used to detect objects in computer visions image processing</p>
-                        <img src={plant7} alt=""></img>
+                        <img src={plant7a} alt=""></img>
+                        <img src={plant7b} alt=""></img>
                     </div>
                 </div>
 
@@ -172,8 +176,10 @@ export default function PlantDetection() {
                                 <li>Most spots/diseases have nearly the same range of color - less gradient for HOG to extract as features</li>
                               </ul>
                             </li>
-                            <img src={plant12} alt=""></img>
+                            <img src={plant12a} alt=""></img>
+                            <img src={plant12b} alt=""></img>
                         </ul>
+                        
                     </div>
                 </div>
 

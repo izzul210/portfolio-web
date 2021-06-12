@@ -1,4 +1,4 @@
-.plant_header{
+.recycle_header{
     background: linear-gradient(rgb(255, 255, 255), rgb(221, 252, 221));
     margin: 3rem 0rem;
     border-radius: 0rem;
@@ -16,7 +16,7 @@
 
     }
 
-    .plant_title{
+    .recycle_title{
         h1{
             font-size: 2.5rem;
 
@@ -27,27 +27,14 @@
         }
     }
 
-    .plant_button{
-        padding-top: 2rem;
-
-        button{
-            background: none;
-            border-radius: 20px;
-            padding: 0.5rem 1.2rem;
-            outline: none;
-            border: 1px solid rgba(0, 0, 0, 0.33);
-            font-size: 1.2rem;
-        }
-    }
-
 }
 
-.plant_content{
+.recycle_content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 1rem 0rem;
     justify-content: center;
-    padding: 1.5rem 0rem;
+    align-items: center;
 
     .content_title{
         padding: 0rem 1rem;
@@ -70,20 +57,37 @@
         }
     }
 
+    .img_div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vid_div{
+        width: 640px;
+        height: 480px;
+
+        @media screen and (max-width: 640px){
+            width: 320px;
+            height: 240px;
+        }
+    }
+
     img{
-        margin: 1rem;
+        margin: 0.5rem;
+        align-items: center;
     }
 
     .content_1,
     .content_2,
     .content_3,
+    .content_4,
     .content_5,
     .content_6,
     .content_7,
     .content_8,
-    .content_10,
-    .content_11,
-    .content_12{
+    .content_9{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -93,53 +97,44 @@
             margin: 1rem 0.2rem;
         }
     }
-
-    .content_9{
-        display: flex;
-        flex-direction: column;
-        margin: 1.5rem;
-    }
 }
 
-.content_2,
-.content_6,
-.content_9{
+//For image sizesL
+.content_1,
+.content_2{
     img{
-        width: 50rem;
+        width: 45rem;
     }
 }
 
-.content_9{
-    img{
-        box-shadow: 0 5px 10px rgba(63, 63, 63, 0.26);
-    }
-}
-
-.content_3,
-.content_5,
-.content_7,
-.content_8,
-.content_10,
-.content_11{
-    img{
-        width: 40rem;
-    }
-}
-
-.content_11{
+.content_3{
     img{
         width: 30rem;
     }
 }
 
+.content_3,
+.content_4,
+.content_5,
+.content_6{
+    .content_points{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+//Image size for phone-screen size
 @media screen and (max-width: 640px){
-    .plant_content{
+    .recycle_content{
         img{
             width: 18rem;
         }
     }
 
-    .content_2{
+    .content_1{
         img{
             width: 21rem;
         }

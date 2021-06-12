@@ -86,7 +86,9 @@ export default function Engineering() {
                                 <p>Electronics</p>
                             </div>
                             <div className="project_buttons">
-                                <button className="more_button">View Project</button>
+                                <Link to="/projects/recyclerobot">
+                                    <button className="more_button">View Project</button>
+                                </Link>   
                             </div>
                         </div>
                     </div>
