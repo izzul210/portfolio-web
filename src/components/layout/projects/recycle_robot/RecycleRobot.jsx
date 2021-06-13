@@ -78,7 +78,6 @@ export default function RecycleRobot() {
                         <h4 style={{'marginTop': '1rem', 'fontWeight': '700'}}>Take Invetory</h4>
                     </h2>
                     <div className="content_points">
-                        
                         <div className="img_div">
                             <img src={recycle4} alt=""></img>
                         </div>
