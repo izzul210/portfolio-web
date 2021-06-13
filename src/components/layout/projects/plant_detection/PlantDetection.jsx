@@ -42,7 +42,9 @@ export default function PlantDetection() {
 
                 <div className="content_2">
                     <div className="content_points">
-                        <img src={plant1} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant1} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -62,7 +64,9 @@ export default function PlantDetection() {
                             </li>
                             <li>K-Means helps in partitioning the image into simpler regions of similar pixels known as clusters</li>
                         </ul>
-                        <img src={plant2} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant2} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -83,7 +87,9 @@ export default function PlantDetection() {
                             <li>Flatten Later</li>
                             <li>1 Hidden Layer of ANN consists of 32 neurons</li>
                         </ul>
-                        <img src={plant3} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant3} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -97,10 +103,14 @@ export default function PlantDetection() {
                         <p>Goal: Classify 8 different classes of crops diseases</p>
                         <p>Training dataset: 2,000 datasets</p>
                         <p>Evaluation accuracy: <b>78% </b>with K-Mean, <b>58%</b> with original image</p>
-                        <img src={plant4} alt="" style={{"marginBottom":"1.5rem"}}></img>
+                        <div className="img_div">
+                            <img src={plant4} alt="" style={{"marginBottom":"1.5rem"}}></img>
+                        </div>
                         <p>Training dataset: 10,000 datasets</p>
                         <p>Evaulation accuracy: <b>84.6%</b> with K-Mean, <b>88.4%</b> with original image</p>
-                        <img src={plant5} alt="" style={{"marginBottom":"1.5rem"}}></img>
+                        <div className="img_div">
+                            <img src={plant5} alt="" style={{"marginBottom":"1.5rem"}}></img>
+                        </div>
                     </div>
                 </div>
 
@@ -123,7 +133,9 @@ export default function PlantDetection() {
                               </ul>
                             </li>
                         </ul>
-                        <img src={plant6} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant6} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -135,14 +147,25 @@ export default function PlantDetection() {
                     </h2>
                     <div className="content_points">
                         <p>HOG is a feature descriptor used to detect objects in computer visions image processing</p>
-                        <img src={plant7a} alt=""></img>
-                        <img src={plant7b} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant7a} alt=""></img>
+                        </div>
+                        <div className="img_div">
+                            <img src={plant7b} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
                 <div className="content_9">
-                  <h5>Our HOG and ANN architecture</h5>
-                  <img src={plant8} alt=""></img>
+                    <h2 className="content_title">
+                        Our HOG with ANN architecture
+                    </h2>
+                    <div className="content_points">
+                        <div className="img_div">
+                            <img src={plant8} alt=""></img>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <hr size="3" width="90%" color="#68273d" style={{"margin":"auto"}}></hr>
@@ -152,7 +175,9 @@ export default function PlantDetection() {
                         Results Summary:
                     </h2>
                     <div className="content_points">
-                        <img src={plant9} alt=""></img>
+                        <div className="img_div">
+                            <img src={plant9} alt=""></img>
+                        </div>
                     </div>
                 </div>
 
@@ -169,15 +194,21 @@ export default function PlantDetection() {
                                 <li>Features can be easily extracted</li>
                               </ul>
                             </li>
-                            <img src={plant10} alt="" style={{"width": "15rem"}}></img>
+                            <div className="img_div">
+                                <img src={plant10} alt="" style={{"width": "15rem"}}></img>
+                            </div>  
                             <li>HOG performs badly with leaves:
                               <ul>
                                 <li>Only able to strongly detect the shapes of the leaf</li>
                                 <li>Most spots/diseases have nearly the same range of color - less gradient for HOG to extract as features</li>
                               </ul>
                             </li>
-                            <img src={plant12a} alt=""></img>
-                            <img src={plant12b} alt=""></img>
+                            <div className="img_div">
+                                <img src={plant12a} alt=""></img>
+                            </div> 
+                            <div className="img_div">
+                                <img src={plant12b} alt=""></img>
+                            </div>  
                         </ul>
                         
                     </div>

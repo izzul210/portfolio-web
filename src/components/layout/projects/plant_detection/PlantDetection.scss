@@ -70,6 +70,13 @@
         }
     }
 
+    .img_div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     img{
         margin: 1rem;
     }
@@ -81,6 +88,7 @@
     .content_6,
     .content_7,
     .content_8,
+    .content_9,
     .content_10,
     .content_11,
     .content_12{
@@ -93,19 +101,13 @@
             margin: 1rem 0.2rem;
         }
     }
-
-    .content_9{
-        display: flex;
-        flex-direction: column;
-        margin: 1.5rem;
-    }
 }
 
 .content_2,
 .content_6,
 .content_9{
     img{
-        width: 50rem;
+        width: 45rem;
     }
 }
 
@@ -135,13 +137,14 @@
 @media screen and (max-width: 640px){
     .plant_content{
         img{
-            width: 18rem;
+            width: 18rem !important;
         }
     }
 
-    .content_2{
+    .content_2,
+    .content_9{
         img{
-            width: 21rem;
+            width: 20rem !important;
         }
     }
 }
