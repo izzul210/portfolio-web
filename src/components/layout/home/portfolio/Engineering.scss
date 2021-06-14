@@ -1,6 +1,7 @@
 @import '../../../../global.scss';
 
 //Default engine_project template:
+
 .engine_project{
     display: flex;
     flex-direction: column;
@@ -21,23 +22,21 @@
         .engine1{
             background-size: 40rem;
         }
-
         .engine2{
             background-size: 33rem;
         }
-
-        .engine3, .engine4{
+        .engine3{
             background-size: 37rem;
         }
-
+        .engine4{
+            background-size: 30rem;
+        }
         .engine6{
-            background-size: 37rem;
+            background-size: 31rem;
         }
-
         .engine5{
             background-size: 30rem;
         }
-        
         .project_des{
             background: rgb(216, 150, 27);
 
@@ -74,11 +73,9 @@
             transform: translateY(0%);
             box-shadow: inset -2px -2px 3px rgb(248, 247, 247),
                         inset 2px 2px 7px rgba(0, 0, 0, 0.233);
-        }
-        
+        }    
     }
     
-
     .project_img{
         height: 20rem;
         background-color: rgb(255,255,255);
@@ -321,6 +318,82 @@
         padding: 1rem 1.2rem;
     }
 }
+
+
+.other_engine{
+    h6{
+        text-align: center;
+        margin: 2rem;
+        opacity: 0.8;
+    }
+
+    @media screen and (max-width: 640px){
+        width: 100%;
+    }
+
+    .swiper-container{
+        width: 100%;
+
+        @media screen and (max-width: 640px){
+            height: 700px;
+            width: 100%;
+        }
+    }
+
+    .swiper-slide{
+        width: 400px !important;
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+
+        @media screen and (max-width: 640px){
+            width: 320px !important;
+        }
+    }
+
+    .engine{
+        @media screen and (max-width: 640px){
+            width: 100%;
+        }
+    }
+
+    .engine_project{
+        width: 30rem;
+
+        @media screen and (max-width: 640px){
+            width: 100%;
+        }
+
+        .project_des{
+            height: 20rem;
+        }
+    }
+
+
+    .project_buttons{
+        a{
+            width: 100% !important;
+
+            .more_button{
+                width: 100%;
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

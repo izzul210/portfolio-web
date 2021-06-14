@@ -8,12 +8,14 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css"
 // import Swiper core and required modules
-import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
+import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
+//Import images for Web App projects
 import project1img from '../../../../assets/socialnetwork1.png';
 import project2img from '../../../../assets/racingcar.png';
 import project3img from '../../../../assets/socialmedia.png';
 
+//Import images for Web App tags
 import reactJS from '../../../../assets/reactJS.png';
 import redux from '../../../../assets/redux.png';
 import node from '../../../../assets/node.png';
@@ -26,7 +28,7 @@ import materialUI from '../../../../assets/material.png';
 import firebase from '../../../../assets/firebase.png';
 
 // install Swiper modules
-SwiperCore.use([Autoplay, Pagination]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function Webdev() {
     return (
@@ -125,7 +127,95 @@ export default function Webdev() {
                  </div>
 
                  <div className="more_work">
-                     <button>See all Web Dev projects</button>
+                    <h6>Other Web Dev projects:</h6>
+
+                    <Swiper slidesPerView={1} 
+                            spaceBetween={5}
+                            centeredSlides={true}
+                            pagination={{"clickable": true}} 
+                            navigation={true} 
+                            breakpoints={{
+                                "640": {
+                                  slidesPerView: 1,
+                                  spaceBetween: 5
+                                },
+                                "768": {
+                                  slidesPerView: 2,
+                                  spaceBetween: 40
+                                },
+                                "1024": {
+                                  slidesPerView: 3,
+                                  spaceBetween: 50
+                                }
+                              }}
+                            className="mySwiper" >
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img">
+                                </div>
+                                <div className="webother_des">
+                                    <h4>Bakery Website</h4>
+                                    <button className="web_button">View Site</button>
+                                </div>
+                                
+                            </div>  
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img">
+
+                                </div>
+                                <div className="webother_des">
+                                    <h4>Bakery Website</h4>
+                                    <button className="web_button">View Site</button>
+                                </div>
+                                
+                            </div>  
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img">
+
+                                </div>
+                                <div className="webother_des">
+                                    <h4>Bakery Website</h4>
+                                    <button className="web_button">View Site</button>
+                                </div>
+                                
+                            </div>  
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img">
+
+                                </div>
+                                <div className="webother_des">
+                                    <h4>Bakery Website</h4>
+                                    <button className="web_button">View Site</button>
+                                </div>
+                                
+                            </div>  
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img">
+
+                                </div>
+                                <div className="webother_des">
+                                    <h4>Bakery Website</h4>
+                                    <button className="web_button">View Site</button>
+                                </div>
+                                
+                            </div>  
+                        </SwiperSlide>
+                        
+
+
+                    </Swiper>
                  </div>
 
              </div>

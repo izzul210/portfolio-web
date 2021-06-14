@@ -183,7 +183,7 @@
     .webdev_portfolios{
         display: flex;
         flex-direction: column;
-        padding: 0 3vw;
+        padding: 0 1vw;
 
         @media screen and (max-width: 640px){
             padding: 0;
@@ -254,31 +254,109 @@
 
         .more_work{
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            padding: 35px;
+            align-items: center;
+            
+            .swiper-container{
+                width: 150vh;
 
-            button{
-                border: 1px solid rgba(0, 0, 0, 0.433);
-                color: $color-4;
-                background: none;
-                padding: 10px 20px;
-                border-radius: 10px;
-                font-weight: 500;
-                transition: all .1s ease;
-
-                &:hover{
-                    background-color: $color-4;
-                    color: rgb(255, 255, 255);
+                @media screen and (max-width: 640px){
+                    height: 500px;
+                    width: 100%;
                 }
+            }
 
+            .swiper-slide{
+                width: 400px !important;
+                margin-right: 2rem !important;
+                margin-left: 2rem !important;
+        
+                @media screen and (max-width: 640px){
+                    width: 320px !important;
+                    margin-right: 0.5rem !important;
+                    margin-left: 0.5rem !important;   
+                }
+            }
+
+
+            .web_other{
+                border-radius: 20px;
+                width: 400px;
                 @media screen and (max-width: 640px){
                     width: 100%;
                 }
             }
+
+            .webother_img{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                height: 300px;
+                width: 100%;
+                background-image: url('../../../../assets/racingcar.png');
+                background-position: center;
+                background-size: 33rem;
+                z-index: -2;
+
+                @media screen and (max-width: 640px){
+                    background-size: 28rem;
+                }
+            }
+
+            .webother_des{
+                border-radius: 20px;
+                height: 100%;
+                width: 100%;
+                background-color: rgb(255, 225, 225);
+                transform: translateY(-20%);
+                padding: 1rem 0.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                button{
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    color: rgb(255, 255, 255);
+                    padding: 15px 50px;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    outline: none;
+                    border: none;
+                    font-weight: 500;
+                    transition: all .1s ease-in-out;
+                    width: 200px;
+
+                    @media screen and (max-width: 640px){
+                        width: 100%;
+                    }
+            }
+
+            .web_button{
+                background: linear-gradient(50deg, rgb(126, 126, 115), rgb(118, 118, 112));
+                border-radius: 50px;
+
+                &:hover{
+                    transform: translateY(-5%);
+                    box-shadow: 0 5px 10px rgba(41, 41, 41, 0.26);
+                }
+
+                &:active{
+                    transform: translateY(0%);
+                    box-shadow: inset -2px -2px 3px rgb(248, 247, 247),
+                                inset 2px 2px 7px rgba(0, 0, 0, 0.233);
+                }
+
+            
+            }
+
+
         }
 
     }
+
+}
 }
 
 

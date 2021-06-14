@@ -1,8 +1,19 @@
 import React from 'react';
 import './Engineering.scss';
 import { Link } from 'react-router-dom';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
+// import Swiper core and required modules
+import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 
 import reportPDF from '../../../../assets/Control_for_SCARA_Robot.pdf';
+
+// install Swiper modules
+SwiperCore.use([Pagination, Navigation]);
 
 export default function Engineering() {
     return (
@@ -94,84 +105,114 @@ export default function Engineering() {
                     </div>
                 </div>        
 
-                <div className="engine">
-                    <div className="engine_project">
-                        <div className="project_img engine4">
-                        </div>
-                        <div className="project_des">
-                            <h5>Digital System Design</h5>
-                            <h2>Flash Memory Reader</h2>
-                            <p>Created a system that reads sound samples from an off-chip flash memory and store them on the on-chip memory using a state machine. The samples are transferred to the audio core as an output by designing audio CODEC</p>
-                            <div className="project_tags">
-                                <p>System Verilog</p>
-                                <p>FPGA</p>
-                                <p>DE1-SoC</p>
-                                <p>CODEC</p>
-                            </div>
-                            <div className="project_buttons">
-                                <a href="https://github.com/izzul210/flash_memory_reader" 
-                                    target="_blank" 
-                                    rel="noreferrer">
-                                    <button className="more_button">
-                                     View on GitHub
-                                    </button>               
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
 
-                <div className="engine">
-                    <div className="engine_project">
-                        <div className="project_img engine5">
-                        </div>
-                        <div className="project_des">
-                            <h5>Microcomputers</h5>
-                            <h2>Data Cache Performance</h2>
-                            <p>Exploring the factors that affect the performance of a program with heavily fouc son L1 data chace within Cortex-A9 of DE1-SoC</p>
-                            <div className="project_tags">
-                                <p>Assembly</p>
-                                <p>Cortex-A9</p>
-                                <p>DE1-SoC</p>
-                            </div>
-                            <div className="project_buttons">
-                                <a href="https://github.com/izzul210/data_cache_performance" 
-                                    target="_blank" 
-                                    rel="noreferrer">
-                                    <button className="more_button">
-                                     View on GitHub
-                                    </button>               
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+                <div className="other_engine">
+                    <h6>Other Engineering projects:</h6>
 
-                <div className="engine">
-                    <div className="engine_project">
-                        <div className="project_img engine6"></div>
-                        <div className="project_des">
-                            <h5>Digital System Design</h5>
-                            <h2>ARC4 Decryption</h2>
-                            <p>Designed and built an ARC4 decryption with Key-Scheduling Algorithm (KSA) and pseudo-random generation algorithm</p>
-                            <div className="project_tags">
-                                <p>System Verilog</p>
-                                <p>KSA Algorithm</p>
-                                <p>DE1-SoC</p>
+                    <Swiper slidesPerView={1} 
+                            spaceBetween={5}
+                            centeredSlides={true}
+                            pagination={{"clickable": true}} 
+                            navigation={true} 
+                            breakpoints={{
+                                "640": {
+                                  slidesPerView: 1,
+                                  spaceBetween: 5
+                                },
+                                "768": {
+                                  slidesPerView: 2,
+                                  spaceBetween: 40
+                                },
+                                "1024": {
+                                  slidesPerView: 3,
+                                  spaceBetween: 50
+                                }
+                              }}
+                            className="mySwiper" >
+                        <SwiperSlide>
+                            <div className="engine">
+                                <div className="engine_project">
+                                    <div className="project_img engine4">
+                                    </div>
+                                    <div className="project_des">
+                                        <h5>Digital System Design</h5>
+                                        <h2>Flash Memory Reader</h2>
+                                        <div className="project_tags">
+                                            <p>System Verilog</p>
+                                            <p>FPGA</p>
+                                            <p>DE1-SoC</p>
+                                            <p>CODEC</p>
+                                        </div>
+                                        <div className="project_buttons">
+                                            <a href="https://github.com/izzul210/flash_memory_reader" 
+                                                target="_blank" 
+                                                rel="noreferrer">
+                                                <button className="more_button">
+                                                View on GitHub
+                                                </button>               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="engine">
+                                <div className="engine_project">
+                                    <div className="project_img engine5">
+                                    </div>
+                                    <div className="project_des">
+                                        <h5>Microcomputers</h5>
+                                        <h2>Data Cache Performance</h2>
+                                        <div className="project_tags">
+                                            <p>Assembly</p>
+                                            <p>Cortex-A9</p>
+                                            <p>DE1-SoC</p>
+                                        </div>
+                                        <div className="project_buttons">
+                                            <a href="https://github.com/izzul210/data_cache_performance" 
+                                                target="_blank" 
+                                                rel="noreferrer">
+                                                <button className="more_button">
+                                                View on GitHub
+                                                </button>               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="project_buttons">
-                                <a href="https://github.com/izzul210/arc4decryption"  
-                                        target="_blank" 
-                                        rel="noreferrer">
-                                    <button className="more_button">
-                                        View on GitHub
-                                    </button>               
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="engine">
+                                <div className="engine_project">
+                                    <div className="project_img engine6"></div>
+                                    <div className="project_des">
+                                        <h5>Digital System Design</h5>
+                                        <h2>ARC4 Decryption</h2>
+                                        <div className="project_tags">
+                                            <p>System Verilog</p>
+                                            <p>KSA Algorithm</p>
+                                            <p>DE1-SoC</p>
+                                        </div>
+                                        <div className="project_buttons">
+                                            <a href="https://github.com/izzul210/arc4decryption"  
+                                                    target="_blank" 
+                                                    rel="noreferrer">
+                                                <button className="more_button">
+                                                    View on GitHub
+                                                </button>               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
 
+                
             </div>
         </div>
     )
