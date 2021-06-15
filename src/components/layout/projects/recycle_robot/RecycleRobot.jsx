@@ -63,10 +63,10 @@ export default function RecycleRobot() {
                         <div className="img_div">
                             <img src={recycle3} alt=""></img>
                         </div>
-                        <video className="vid_div" controls>
+                        {/* <video className="vid_div" controls>
                             <source src={disposingobjects} type="video/mp4"></source>
                             Your browser does not support the video tag.
-                        </video>
+                        </video> */}
                     </div>
                 </div>
 

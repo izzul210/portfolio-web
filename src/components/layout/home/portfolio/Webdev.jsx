@@ -11,9 +11,15 @@ import "swiper/components/navigation/navigation.min.css"
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
 //Import images for Web App projects
-import project1img from '../../../../assets/socialnetwork1.png';
-import project2img from '../../../../assets/racingcar.png';
-import project3img from '../../../../assets/socialmedia.png';
+import mediasosial1 from '../../../../assets/projects/mediasosial/mediasosial1.png';
+import mediasosial2 from '../../../../assets/projects/mediasosial/mediasosial2.png';
+import mediasosial3 from '../../../../assets/projects/mediasosial/mediasosial3.png';
+import racingcar from '../../../../assets/racingcar.png';
+import rangkaiansosial1 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial1.png';
+import rangkaiansosial2 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial2.png';
+import rangkaiansosial3 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial3.png';
+import rangkaiansosial4 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial4.png';
+
 
 //Import images for Web App tags
 import reactJS from '../../../../assets/reactJS.png';
@@ -49,14 +55,14 @@ export default function Webdev() {
                     <div className="webdev_project">
                         <div className="project_des">
                             <h5>Web App</h5>
-                            <h2>Social Network Web App</h2>
+                            <h2>Social Media Web App</h2>
                             <p>Created a system that reads sound samples from an off-chip flash memory 
-                                and store them to the on-chip memory using a state machine.</p>
+                               and store them to the on-chip memory using a state machine.</p>
                             <div className="project_tags">
                                 <img src={reactJS} alt="" style={{"width":"6.5rem"}}></img>
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
-                                <img src={node} alt="" style={{"width":"5.5rem"}}></img>
-                                <img src={mongo} alt="" style={{"width":"5.5rem"}}></img>
+                                <img src={materialUI} alt="" style={{"width":"4rem"}}></img>
+                                <img src={firebase} alt="" style={{"width":"4rem"}}></img>
                             </div>
                             <div className="project_buttons">
                                 <button className="web_button">View Site</button>
@@ -65,9 +71,9 @@ export default function Webdev() {
                         </div>
                         <div className="project_img">
                         <Swiper pagination={true} className="mySwiper" autoplay={{"delay": 1200}}>
-                            <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
-                            <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
-                            <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                            <SwiperSlide><img src={mediasosial1} alt=""></img></SwiperSlide>
+                            <SwiperSlide><img src={mediasosial2} alt=""></img></SwiperSlide>
+                            <SwiperSlide><img src={mediasosial3} alt=""></img></SwiperSlide>
                         </Swiper>
                         </div>
                     </div>
@@ -77,7 +83,7 @@ export default function Webdev() {
                 <div className="webdev_2">
                     <div className="webdev_project">
                         <div className="project_img">
-                            <img src={project2img} alt=""></img>
+                            <img src={racingcar} alt=""></img>
                         </div>
                         <div className="project_des">
                             <h5>Machine Learning Simulation</h5>
@@ -101,14 +107,14 @@ export default function Webdev() {
                     <div className="webdev_project">
                         <div className="project_des">
                             <h5>Web App</h5>
-                            <h2>Social Media Web App</h2>
+                            <h2>Social Network Web App</h2>
                             <p>Created a system that reads sound samples from an off-chip flash memory 
-                               and store them to the on-chip memory using a state machine.</p>
+                                and store them to the on-chip memory using a state machine.</p>
                             <div className="project_tags">
                                 <img src={reactJS} alt="" style={{"width":"6.5rem"}}></img>
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
-                                <img src={materialUI} alt="" style={{"width":"4rem"}}></img>
-                                <img src={firebase} alt="" style={{"width":"4rem"}}></img>
+                                <img src={node} alt="" style={{"width":"5.5rem"}}></img>
+                                <img src={mongo} alt="" style={{"width":"5.5rem"}}></img>
                             </div>
                             <div className="project_buttons">
                                 <button className="web_button">View Site</button>
@@ -117,9 +123,10 @@ export default function Webdev() {
                         </div>
                         <div className="project_img">
                             <Swiper pagination={true} className="mySwiper" autoplay={{"delay": 1200}}>
-                                <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
-                                <SwiperSlide><img src={project3img} alt=""></img></SwiperSlide>
-                                <SwiperSlide><img src={project1img} alt=""></img></SwiperSlide>
+                                <SwiperSlide><img src={rangkaiansosial1} alt=""></img></SwiperSlide>
+                                <SwiperSlide><img src={rangkaiansosial2} alt=""></img></SwiperSlide>
+                                <SwiperSlide><img src={rangkaiansosial3} alt=""></img></SwiperSlide>
+                                <SwiperSlide><img src={rangkaiansosial4} alt=""></img></SwiperSlide>
                             </Swiper>
                         </div>
                      </div>
@@ -130,7 +137,7 @@ export default function Webdev() {
 
                     <Swiper slidesPerView={1} 
                             spaceBetween={5}
-                            centeredSlides={true}
+                            freeMode={true}
                             pagination={{"clickable": true}} 
                             navigation={true} 
                             breakpoints={{

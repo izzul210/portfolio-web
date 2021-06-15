@@ -111,7 +111,7 @@ export default function Engineering() {
 
                     <Swiper slidesPerView={1} 
                             spaceBetween={5}
-                            centeredSlides={true}
+                            freeMode={true}
                             pagination={{"clickable": true}} 
                             navigation={true} 
                             breakpoints={{
