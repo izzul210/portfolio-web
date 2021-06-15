@@ -39,7 +39,7 @@ export default function Webdev() {
                         <path class="stroke1" d="M22 31L39.5688 48.5688C40.3499 49.3499 40.3499 50.6162 39.5688 51.3973L22 68.9661" stroke="#68273d" stroke-width="2.5px" style={{"animation-duration": "0.4s"}}></path>
                         <line class="line-terminal1 stroke2" x1="40.9833" y1="67.9661" x2="78.9494" y2="67.9661" stroke="#68273d" stroke-width="3.5px" style={{"animation-duration": "0.4s"}}></line>
                     </svg>
-                    Web Development
+                    <b style={{'fontSize': '1.5rem'}}>Web Development</b>
                 </h5>
             </div>
 
@@ -57,7 +57,6 @@ export default function Webdev() {
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
                                 <img src={node} alt="" style={{"width":"5.5rem"}}></img>
                                 <img src={mongo} alt="" style={{"width":"5.5rem"}}></img>
-                                
                             </div>
                             <div className="project_buttons">
                                 <button className="web_button">View Site</button>
@@ -127,7 +126,7 @@ export default function Webdev() {
                  </div>
 
                  <div className="more_work">
-                    <h6>Other Web Dev projects:</h6>
+                    <h5 style={{'paddingBottom': '2rem'}}>Other projects:</h5>
 
                     <Swiper slidesPerView={1} 
                             spaceBetween={5}
@@ -137,7 +136,7 @@ export default function Webdev() {
                             breakpoints={{
                                 "640": {
                                   slidesPerView: 1,
-                                  spaceBetween: 5
+                                  spaceBetween: 1
                                 },
                                 "768": {
                                   slidesPerView: 2,
@@ -155,66 +154,15 @@ export default function Webdev() {
                                 </div>
                                 <div className="webother_des">
                                     <h4>Bakery Website</h4>
-                                    <button className="web_button">View Site</button>
+                                    <div className="class_button">
+                                       <button className="web_button">View Site</button>
+                                    </div>
                                 </div>
                                 
                             </div>  
                         </SwiperSlide>
 
-                        <SwiperSlide>
-                            <div className="web_other">
-                                <div className="webother_img">
-
-                                </div>
-                                <div className="webother_des">
-                                    <h4>Bakery Website</h4>
-                                    <button className="web_button">View Site</button>
-                                </div>
-                                
-                            </div>  
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="web_other">
-                                <div className="webother_img">
-
-                                </div>
-                                <div className="webother_des">
-                                    <h4>Bakery Website</h4>
-                                    <button className="web_button">View Site</button>
-                                </div>
-                                
-                            </div>  
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="web_other">
-                                <div className="webother_img">
-
-                                </div>
-                                <div className="webother_des">
-                                    <h4>Bakery Website</h4>
-                                    <button className="web_button">View Site</button>
-                                </div>
-                                
-                            </div>  
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="web_other">
-                                <div className="webother_img">
-
-                                </div>
-                                <div className="webother_des">
-                                    <h4>Bakery Website</h4>
-                                    <button className="web_button">View Site</button>
-                                </div>
-                                
-                            </div>  
-                        </SwiperSlide>
                         
-
-
                     </Swiper>
                  </div>
 

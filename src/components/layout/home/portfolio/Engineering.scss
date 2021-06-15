@@ -311,8 +311,7 @@
 }
 
 .portfolio_engine{
-    background: linear-gradient( rgb(255, 255, 255), rgb(250, 242, 232),);
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 
     @media screen and (max-width: 640px){
         padding: 1rem 1.2rem;
@@ -321,10 +320,23 @@
 
 
 .other_engine{
-    h6{
+    .other_title{
         text-align: center;
         margin: 2rem;
         opacity: 0.8;
+        font-size: 1.3rem !important;
+    }
+
+    h5{
+        font-size: 0.9rem !important;
+    }
+
+    h2{
+        font-size: 1.1rem !important;
+    }
+
+    p{
+        font-size: 0.7rem !important;
     }
 
     @media screen and (max-width: 640px){
@@ -381,19 +393,6 @@
 
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
