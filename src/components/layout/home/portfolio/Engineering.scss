@@ -97,7 +97,7 @@
     }
 
     .project_des{
-        height: 30rem;
+        height: 25rem;
         background: rgb(255, 255, 255);
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -111,7 +111,7 @@
         h5{
             font-weight: 900;
             color: $color-1;
-            font-size: 1.1rem;
+            font-size: 1rem;
 
             @media screen and (max-width: 640px){
                 font-size: 0.9rem;
@@ -120,9 +120,9 @@
 
         h2{
             font-weight: 700;
-            margin: 1rem 0rem;
+            margin: 0.5rem 0rem;
             color: $color-5;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
 
             @media screen and (max-width: 640px){
                 font-size: 1.3rem;
@@ -131,7 +131,8 @@
         }
 
         p{
-            margin: 1rem 0rem;
+            margin: 0.5rem 0rem;
+            font-size: 0.9rem;
 
             @media screen and (max-width: 640px){
                 font-size: 0.8rem;
@@ -325,19 +326,7 @@
         margin: 2rem;
         opacity: 0.8;
         font-size: 1.3rem !important;
-    }
-
-    h5{
-        font-size: 0.9rem !important;
-    }
-
-    h2{
-        font-size: 1.1rem !important;
-    }
-
-    p{
-        font-size: 0.7rem !important;
-    }
+    } 
 
     @media screen and (max-width: 640px){
         width: 100%;

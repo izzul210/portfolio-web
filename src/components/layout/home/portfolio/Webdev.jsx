@@ -38,7 +38,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function Webdev() {
     return (
-        <div className="portfolio_webdev">
+        <div className="portfolio_webdev" id="webdev">
             <div className="title">
                 <h5>
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{"width": "100px", "height": "100px"}}>
@@ -169,7 +169,7 @@ export default function Webdev() {
                             className="mySwiper" >
                         <SwiperSlide>
                             <div className="web_other">
-                                <div className="webother_img">
+                                <div className="webother_img other1">
                                 </div>
                                 <div className="webother_des">
                                     <h5>Website</h5>
@@ -182,7 +182,24 @@ export default function Webdev() {
                                     </a>
                                     </div>
                                 </div>
-                                
+                            </div>  
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="web_other">
+                                <div className="webother_img other2">
+                                </div>
+                                <div className="webother_des">
+                                    <h5>Website</h5>
+                                    <h4>Portfolio Website</h4>
+                                    <div className="class_button">
+                                    <a href="/" 
+                                        target="_blank" 
+                                        rel="noreferrer">
+                                        <button className="web_button">View Site</button>               
+                                    </a>
+                                    </div>
+                                </div>
                             </div>  
                         </SwiperSlide>
 

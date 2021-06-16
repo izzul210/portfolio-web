@@ -1,26 +1,21 @@
 import React from 'react';
 import './Menu.scss';
-import { Link } from 'react-router-dom';
-
 
 export default function Menu({menuOpen, setMenuOpen}) {
     return (
         <div className={`menu ${menuOpen && "active"}`}>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <a href="#webdev">Web Dev</a>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <a href="#engineering">Engineering</a>
                 </li>
                 <li>
-                    <Link to="/artworks">Artworks</Link>
-                </li>
-                <li>
-                    <Link to="/blog">Blog</Link>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>

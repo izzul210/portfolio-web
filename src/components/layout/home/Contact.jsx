@@ -5,7 +5,7 @@ class Contact extends Component{
     render(){
         return(
             <Fragment>
-                <div className="contact_div">
+                <div className="contact_div" id="contact">
                     <div className="contact_title">
                         <hr size="3" width="80%" color="#68273d"></hr>
                         <h3>CONTACTS</h3>

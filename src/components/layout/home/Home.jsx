@@ -6,11 +6,11 @@ import Contact from './Contact';
 class Home extends Component{
     render(){
         return(
-          <Fragment >
+          <div>
             <Header />
             <Portfolio />
             <Contact />
-          </Fragment> 
+          </div> 
         )
     }
 }

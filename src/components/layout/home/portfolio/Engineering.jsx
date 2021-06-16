@@ -17,7 +17,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 export default function Engineering() {
     return (
-        <div className="portfolio_engine">
+        <div className="portfolio_engine" id="engineering">
             <div className="title">
                 <h5>
                     <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" style={{"width": "146px", "height": "146px", "transform": "rotateY(180deg)"}}>
@@ -65,8 +65,7 @@ export default function Engineering() {
                             <h5>Image Processing  &  Machine Learning </h5>
                             <h2>Image-based Plant Diseases Detection</h2>
                             <p>Crop disease detection and classification system using
-                                2 independent Machine Learning models - CNN and ANN - with 
-                                2 methods of image processing - K-Mean Clustering and Histogram of Oriented Gradient (HOG).</p>
+                                2 independent Machine Learning models with image processing methods of K-Mean Clustering and Histogram of Oriented Gradient (HOG).</p>
                             <div className="project_tags">
                                 <p>Python</p>
                                 <p>Tensorflow</p>
@@ -113,7 +112,7 @@ export default function Engineering() {
                             spaceBetween={5}
                             freeMode={true}
                             pagination={{"clickable": true}} 
-                            // navigation={true} 
+                            navigation={true} 
                             breakpoints={{
                                 "640": {
                                   slidesPerView: 1,
