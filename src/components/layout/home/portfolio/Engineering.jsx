@@ -113,7 +113,7 @@ export default function Engineering() {
                             spaceBetween={5}
                             freeMode={true}
                             pagination={{"clickable": true}} 
-                            navigation={true} 
+                            // navigation={true} 
                             breakpoints={{
                                 "640": {
                                   slidesPerView: 1,

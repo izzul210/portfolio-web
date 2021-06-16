@@ -56,8 +56,7 @@ export default function Webdev() {
                         <div className="project_des">
                             <h5>Web App</h5>
                             <h2>Social Media Web App</h2>
-                            <p>Created a system that reads sound samples from an off-chip flash memory 
-                               and store them to the on-chip memory using a state machine.</p>
+                            <p>Web App that allows users that sign up to make a post and comments to other user's post.</p>
                             <div className="project_tags">
                                 <img src={reactJS} alt="" style={{"width":"6.5rem"}}></img>
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
@@ -65,8 +64,12 @@ export default function Webdev() {
                                 <img src={firebase} alt="" style={{"width":"4rem"}}></img>
                             </div>
                             <div className="project_buttons">
-                                <button className="web_button">View Site</button>
-                                <button className="more_button">Learn More</button>
+                                <a href="https://mediasosial-18580.web.app/" 
+                                    target="_blank" 
+                                    rel="noreferrer">
+                                    <button className="web_button">View Site</button>               
+                                </a>
+                                {/* <button className="more_button">Learn More</button> */}
                             </div>
                         </div>
                         <div className="project_img">
@@ -88,7 +91,9 @@ export default function Webdev() {
                         <div className="project_des">
                             <h5>Machine Learning Simulation</h5>
                             <h2>Neuroevolution Racing Cars</h2>
-                            <p> The samples are transferred to the audio core as an output by designing audio CODEC</p>
+                            <p>A simulation of racing cars that learn to finish a race using the method of Genetic Algorithm and Neural Network
+                                (Neuroevolution). The race track changes randomly every simulation using an algorithm to allow the cars to learn effectively. 
+                            </p>
                             <div className="project_tags">
                                 <img src={p5JS} alt="" style={{"width":"7rem"}}></img>
                                 <img src={tensorflowJS} alt="" style={{"width":"8rem"}}></img> 
@@ -96,8 +101,12 @@ export default function Webdev() {
                                 <img src={javascript} alt="" style={{"width":"4rem"}}></img> 
                             </div>
                             <div className="project_buttons">
-                                <button className="web_button">View Site</button>
-                                <button className="more_button">Learn More</button>
+                                <a href="https://racingcarsneuralnet.web.app/" 
+                                    target="_blank" 
+                                    rel="noreferrer">
+                                    <button className="web_button">View Site</button>               
+                                </a>
+                                {/* <button className="more_button">Learn More</button> */}
                             </div>
                          </div>                
                     </div>
@@ -108,8 +117,7 @@ export default function Webdev() {
                         <div className="project_des">
                             <h5>Web App</h5>
                             <h2>Social Network Web App</h2>
-                            <p>Created a system that reads sound samples from an off-chip flash memory 
-                                and store them to the on-chip memory using a state machine.</p>
+                            <p>Social Network Web App that allows users to post, comments and share their career experiences and skills.</p>
                             <div className="project_tags">
                                 <img src={reactJS} alt="" style={{"width":"6.5rem"}}></img>
                                 <img src={redux} alt="" style={{"width":"3.5rem"}}></img>
@@ -117,8 +125,12 @@ export default function Webdev() {
                                 <img src={mongo} alt="" style={{"width":"5.5rem"}}></img>
                             </div>
                             <div className="project_buttons">
-                                <button className="web_button">View Site</button>
-                                <button className="more_button">Learn More</button>
+                                <a href="https://young-thicket-35798.herokuapp.com/" 
+                                    target="_blank" 
+                                    rel="noreferrer">
+                                    <button className="web_button">View Site</button>               
+                                </a>
+                                {/* <button className="more_button">Learn More</button> */}
                             </div>
                         </div>
                         <div className="project_img">
@@ -160,9 +172,14 @@ export default function Webdev() {
                                 <div className="webother_img">
                                 </div>
                                 <div className="webother_des">
+                                    <h5>Website</h5>
                                     <h4>Bakery Website</h4>
                                     <div className="class_button">
-                                       <button className="web_button">View Site</button>
+                                    <a href="https://bakedgoods-02.web.app/" 
+                                        target="_blank" 
+                                        rel="noreferrer">
+                                        <button className="web_button">View Site</button>               
+                                    </a>
                                     </div>
                                 </div>
                                 
