@@ -403,11 +403,11 @@
 .line-terminal1 {
     animation: line-terminal1-blink 1s infinite;
 }
-@keyframes line-terminal1-blink{
-    0%{visibility: visible;}
-    50%{visibility: hidden;}
-    100%{visibility: hidden;}
-}
+// @keyframes line-terminal1-blink{
+//     0%{visibility: visible;}
+//     50%{visibility: hidden;}
+//     100%{visibility: hidden;}
+// }
 @media (prefers-reduced-motion: reduce) {
     .line-terminal1 {
         animation: none;

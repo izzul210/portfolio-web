@@ -21,7 +21,7 @@ class Header extends Component{
                             <h2><span id="myElement"></span></h2>
                         </div>
                         <div className="header_about">
-                            <p>I'm a 24 years old recent Electrical Engineering graduate from UBC, Vancouver.
+                            <p>I'm a recent Electrical Engineering graduate from UBC, Vancouver.
                                 This website showcase all of my projects and portfolios on <b>Web Development</b>, 
                                 <b> Engineering</b>, and <b> Machine Learning</b>. 
                             </p>
