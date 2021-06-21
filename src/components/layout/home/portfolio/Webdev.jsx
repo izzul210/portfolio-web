@@ -11,15 +11,14 @@ import "swiper/components/navigation/navigation.min.css"
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
 //Import images for Web App projects
-import mediasosial1 from '../../../../assets/projects/mediasosial/mediasosial1.png';
-import mediasosial2 from '../../../../assets/projects/mediasosial/mediasosial2.png';
-import mediasosial3 from '../../../../assets/projects/mediasosial/mediasosial3.png';
+import mediasosial1 from '../../../../assets/projects/mediasosial/mediasosial1a.png';
+import mediasosial2 from '../../../../assets/projects/mediasosial/mediasosial2a.png';
+import mediasosial3 from '../../../../assets/projects/mediasosial/mediasosial3a.png';
 import racingcar from '../../../../assets/racingcar.png';
 import rangkaiansosial1 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial1.png';
 import rangkaiansosial2 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial2.png';
 import rangkaiansosial3 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial3.png';
 import rangkaiansosial4 from '../../../../assets/projects/rangkaiansosial/rangkaiansosial4.png';
-
 
 //Import images for Web App tags
 import reactJS from '../../../../assets/reactJS.png';
